@@ -8,7 +8,7 @@ section_subject_domain_of_algebraic_topology => nrel_main_idtf:
 section_subject_domain_of_algebraic_topology <- nrel_system_identifier;;
 
 section_subject_domain_of_algebraic_topology => nrel_section_decomposition: {
-    section_subject_domain_of_homotopy_groupss;
+    section_subject_domain_of_homotopy_groups;
     section_subject_domain_of_homology;
     section_subject_domain_of_cohomology;
     section_subject_domain_of_manifolds;
@@ -30,7 +30,7 @@ section_subject_domain_of_algebraic_topology = [*
         concept_algebraic_topology;;
 
     subject_domain_of_algebraic_topology => nrel_private_subject_domain:
-        subject_domain_of_homotopy_groupss;
+        subject_domain_of_homotopy_groups;
         subject_domain_of_homology;
         subject_domain_of_cohomology;
         subject_domain_of_manifolds;
