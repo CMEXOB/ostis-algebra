@@ -19,7 +19,7 @@ concept_differential_topology => nrel_main_idtf:
 
 concept_topology => nrel_inclusion: concept_differential_topology;;
 
-concept_elementary_algebra <= nrel_using_constants:
+concept_differential_topology <= nrel_using_constants:
 	{
 	concept_topology;
      concept_differentiable_function
