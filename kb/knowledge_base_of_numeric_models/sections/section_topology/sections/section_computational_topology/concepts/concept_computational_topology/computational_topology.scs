@@ -19,7 +19,7 @@ concept_computational_topology => nrel_main_idtf:
 
 concept_topology => nrel_inclusion: concept_computational_topology;;
 
-concept_elementary_algebra <= nrel_using_constants:
+concept_computational_topology <= nrel_using_constants:
 	{
 	concept_topology
 	};;
