@@ -19,7 +19,7 @@ concept_general_topology => nrel_main_idtf:
 
 concept_topology => nrel_inclusion: concept_general_topology;;
 
-concept_elementary_algebra <= nrel_using_constants:
+concept_general_topology <= nrel_using_constants:
 	{
 	concept_topology;
 	concept_theoretical_definitions ;
@@ -27,3 +27,4 @@ concept_elementary_algebra <= nrel_using_constants:
 	};;
 
 
+concept_general_topology -> rrel_example:	"file://generel_topology_example.png";;
