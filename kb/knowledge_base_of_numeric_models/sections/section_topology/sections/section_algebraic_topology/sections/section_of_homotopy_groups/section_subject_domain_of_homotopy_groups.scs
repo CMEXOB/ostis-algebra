@@ -1,7 +1,7 @@
 sc_node_struct -> section_subject_domain_of_homotopy_groups;;
 
 section_subject_domain_of_homotopy_groups => nrel_main_idtf:
-    [Раздел. Предметная область гомотопическая группа] (* <- lang_ru;; *);
+    [Раздел. Предметная область гомотопических групп] (* <- lang_ru;; *);
     [Section. Subject domain of homotopy groups] (* <- lang_en;; *);
 <- non_atomic_section;;
 
@@ -13,7 +13,7 @@ section_subject_domain_of_homotopy_groups -> rrel_key_sc_element:
 
 section_subject_domain_of_homotopy_groups = [*
     subject_domain_of_homotopy_groups => nrel_main_idtf:
-        [Предметная область гомотопическая группа] (* <- lang_ru;; *);
+        [Предметная область гомотопических групп] (* <- lang_ru;; *);
         [Subject domain of homotopy groups] (* <- lang_en;; *);
     <- subject_domain;;
 

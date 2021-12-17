@@ -1,8 +1,8 @@
 sc_node_norole_relation -> nrel_dimension_manifold;;
 
 nrel_dimension_manifold => nrel_main_idtf:
-[размерность многообразия* ](* <- lang_ru;; *);  
-[dimension manifold* ](* <- lang_en;; *);;
+[размерность многообразия*](* <- lang_ru;; *);  
+[dimension manifold*](* <- lang_en;; *);;
 
 
 //определение

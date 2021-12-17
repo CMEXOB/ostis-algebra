@@ -1,5 +1,8 @@
 sc_node_role_relation -> rrel_closed_manifold ;;
-rrel_closed_manifold => nrel_main_idtf:	[замкнутое многообразие'](* <- lang_ru;; *);  [closed manifold'](* <- lang_en;; *);;
+
+rrel_closed_manifold => nrel_main_idtf:	
+[замкнутое многообразие'](* <- lang_ru;; *);  
+[closed manifold'](* <- lang_en;; *);;
 
 rrel_closed_manifold => nrel_idtf: [closed'](*<-lang_en;; *);;
 

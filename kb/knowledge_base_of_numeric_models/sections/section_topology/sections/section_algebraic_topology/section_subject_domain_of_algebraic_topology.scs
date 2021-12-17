@@ -1,7 +1,7 @@
 sc_node_struct -> section_subject_domain_of_algebraic_topology;;
 
 section_subject_domain_of_algebraic_topology => nrel_main_idtf:
-    [Раздел. Предметная область алгебраическая топология] (* <- lang_ru;; *);
+    [Раздел. Предметная область алгебраической топологии] (* <- lang_ru;; *);
     [Section. Subject domain of algebraic topology] (* <- lang_en;; *);
 <- non_atomic_section;;
 
@@ -22,7 +22,7 @@ section_subject_domain_of_algebraic_topology -> rrel_key_sc_element:
 
 section_subject_domain_of_algebraic_topology = [*
     subject_domain_of_algebraic_topology => nrel_main_idtf:
-        [Предметная область алгебраическая топологии] (* <- lang_ru;; *);
+        [Предметная область алгебраической топологии] (* <- lang_ru;; *);
         [Subject domain of algebraic topology] (* <- lang_en;; *);
     <- subject_domain;;
 

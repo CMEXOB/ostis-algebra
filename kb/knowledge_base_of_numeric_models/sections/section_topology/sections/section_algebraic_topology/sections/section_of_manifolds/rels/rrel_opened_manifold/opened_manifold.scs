@@ -1,5 +1,8 @@
 sc_node_role_relation -> rrel_opened_manifold ;;
-rrel_opened_manifold => nrel_main_idtf:	[открытое многообразие'](* <- lang_ru;; *);  [opened manifold'](* <- lang_en;; *);;
+
+rrel_opened_manifold => nrel_main_idtf:	
+[открытое многообразие'](* <- lang_ru;; *);  
+[opened manifold'](* <- lang_en;; *);;
 
 rrel_opened_manifold => nrel_idtf: [opened'](*<-lang_en;; *);;
 
