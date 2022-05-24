@@ -1,0 +1,68 @@
+sc_node_not_relation->concept_euler_mascheroni_constant;; 
+concept_euler_mascheroni_constant=>nrel_main_idtf: [постоянная Эйлера-Маскерони](*<-lang_ru;;*);	[Euler-Mascheroni constant](*<-lang_en;;*);;
+
+concept_euler_mascheroni_constant=>nrel_idtf:	[0,764];		[γ](*<-lang_en;;*);;
+
+concept_euler_mascheroni_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(постоянная Эйлера-Маскерони)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Постоянная Эйлера-Маскерони - математическая константа, определяемая как предел разности между частичной суммой гармонического ряда и натуральным логарифмом числа, является рациональной дробью. Обозначается строчной латинской буквой «γ». γ=0,577215664…](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_euler_mascheroni_constant <= nrel_using_constants:
+	{
+	nrel_limit;
+    nrel_logarithm;
+	concept_harmonic_series
+	};;
+
+concept_euler_mascheroni_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(рациональнальная дробь)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Постоянная Эйлера-Маскерони рациональнальная дробь.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_euler_mascheroni_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(свойство постоянной Эйлера-Маскерони)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[γ = lim(n->∞)(1+1/2+1/3+...+1/n-ln(n))];;
+		*);;
+	*);;
+
+
+concept_euler_mascheroni_constant<-concept_number;;
+concept_euler_mascheroni_constant<-concept_rational_number;;
+
+
+concept_euler_mascheroni_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(постоянная Эйлера-Маскерони)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[γ=1,414…. В простых случаях достаточно знать первые 4 знака (0,577). Но для более сложных случаев и там, где нужна большая точность необходимо знать больше, чем 4 цифры. Первые 35 знаков γ после запятой 0,577 215 664 901 532 860 606 512 090 082 402 43...](* <- lang_ru;; 	*);;
+		*);;
+	*);;

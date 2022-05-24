@@ -1,0 +1,52 @@
+sc_node_role_relation -> rrel_mantissa;;
+rrel_mantissa => nrel_main_idtf:	[мантисса'](* <- lang_ru;; *);  [mantissa'](* <- lang_en;; *);;
+
+rrel_mantissa <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:[Опр.(мантисса')](*<- lang_ru;;*);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation:
+			...
+		(*
+	      -> rrel_example:
+			[Мантисса числа x - это число m, равное дробной части числа x.](*<-lang_ru;;*);;
+		*);;
+	*);;
+
+rrel_mantissa <- rrel_key_sc_element:
+ 	...
+	(*
+	=> nrel_main_idtf:[Пояснение.(мантисса')](*<- lang_ru;;*);;
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Мантисса числа x - это число m, равное разности x и антье x.](*<-lang_ru;;*);;
+		*);;
+	*);;
+
+rrel_mantissa <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:[Утв.(число; мантисса')](*<-lang_ru;;*);;
+	<-sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Если мантисса числа равно 0, то это число - целое.](*<-lang_ru;;*);;
+		*);;
+	*);
+...
+	(*
+	=> nrel_main_idtf:[Утв.(число; антье'; мантисса')](*<-lang_ru;;*);;
+	<-sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Любое число может иметь только одну мантиссу.](*<-lang_ru;;*);;
+		*);;
+	*);;

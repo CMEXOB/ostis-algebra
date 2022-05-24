@@ -1,0 +1,47 @@
+sc_node_not_relation -> concept_sophie_germain_number;; 
+
+concept_sophie_germain_number => nrel_main_idtf:
+[число Cофи Жермен](*<-lang_ru;;*);
+[sophie germain number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_sophie_germain_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (число Cофи Жермен)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://sophie_germain_number1.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_sophie_germain_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(число Cофи Жермен; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Первые несколько простых чисел Софи Жермен: 2, 3, 5, 11, 23, 29, 41, 53, 83, 89, 113, 131, 173, 179, 191, 233, 239, 251, 281, 293, 359, …](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_sophie_germain_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(число Cофи Жермен)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Наибольшее известное простое число Софи Жермен: На 2016 год рекордом является число 2 618 163 402 417·2 ^ 1 290 000 - 1 длиной 388 342 десятичные цифры.](* <- lang_ru;; *);;
+		*);;
+	*);;

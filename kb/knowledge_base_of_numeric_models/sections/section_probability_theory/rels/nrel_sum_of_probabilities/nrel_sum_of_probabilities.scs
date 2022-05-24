@@ -1,0 +1,28 @@
+sc_node_norole_relation ->  nrel_sum_of_probabilities;;
+
+nrel_sum_of_probabilities => nrel_main_idtf:
+[сумма вероятностей*](*<-lang_ru;;*);
+[sum of probabilities*](*<-lang_en;;*);;
+
+
+
+nrel_sum_of_probabilities <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(сумма вероятностей* )]  (* <- lang_ru;; *);;
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Вероятность суммы двух событий равна сумме их вероятностей минус вероятность их произведения](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_sum_of_probabilities -> rrel_example :
+		"file://sum.png";;
+
+nrel_sum_of_probabilities <- ternary_relation;;
+nrel_sum_of_probabilities <= nrel_first_domain: concept_number;;
+nrel_sum_of_probabilities <= nrel_second_domain: concept_number;;
+nrel_sum_of_probabilities <= nrel_third_domain: concept_number;;

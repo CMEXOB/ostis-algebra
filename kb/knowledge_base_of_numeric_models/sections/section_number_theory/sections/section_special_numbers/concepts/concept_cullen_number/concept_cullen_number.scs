@@ -1,0 +1,47 @@
+sc_node_not_relation -> concept_cullen_number;; 
+
+concept_cullen_number => nrel_main_idtf:
+[число Каллена](*<-lang_ru;;*);
+[bell number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_cullen_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (Число Каллена)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://cullen_number.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_cullen_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(Число Каллена; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Все известные простые числа Каллена соответствуют n, равному: 1, 141, 4713, 5795, 6611, 18496, 32292, 32469, 59656, 90825, 262419, 361275, 481899, 1354828, 6328548, 6679881](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_cullen_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(Число Каллена)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[К августу 2009, наибольшим известным простым числом Каллена было 6679881*2^6679881+1.](* <- lang_ru;; *);;
+		*);;
+	*);;

@@ -1,0 +1,54 @@
+sc_node_not_relation->concept_feigenbaum_constants;; 
+concept_feigenbaum_constants=>nrel_main_idtf: [постоянные Фейгенбаума](*<-lang_ru;;*);	[Feigenbaum constants](*<-lang_en;;*);;
+
+concept_feigenbaum_constants <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Постоянные Фейгенбаума)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Постоянные Фейгенбаума — универсальные постоянные, характеризующие бесконечный каскад бифуркаций удвоения периода при переходе к детерминированному хаосу (сценарий Фейгенбаума).](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_feigenbaum_constants <= nrel_using_constants:
+	{
+    concept_feigenbaum_script;
+	concept_cascade_of_bifurcations
+	};;
+
+concept_feigenbaum_constants <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(иррациональное число, трансцендентное число)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Постоянные Фейгенбаума рациональнальные и трансцендентные числа.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_feigenbaum_constants<-concept_number;;
+concept_feigenbaum_constants<-concept_irrational_number;;
+
+concept_feigenbaum_constants => nrel_inclusion: concept_first_feigenbaum_constant;;
+concept_feigenbaum_constants => nrel_inclusion: concept_second_feigenbaum_constant;;
+
+concept_feigenbaum_constants <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(постоянные Фейгенбаума)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Всего существует две постоянные Фейгенбаума: δ и α](* <- lang_ru;; 	*);;
+		*);;
+	*);;

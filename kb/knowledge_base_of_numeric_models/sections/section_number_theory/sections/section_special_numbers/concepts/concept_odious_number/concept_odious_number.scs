@@ -1,0 +1,47 @@
+sc_node_not_relation -> concept_odious_number;; 
+
+concept_odious_number => nrel_main_idtf:
+[одиозное число](*<-lang_ru;;*);
+[odious number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_odious_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (Одиозное число)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Одиозное число — целое неотрицательное число с чётным весом Хэмминга при записи в двоичной системе счисления (то есть с чётным числом единиц в двоичной записи).](* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_odious_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(Одиозное число; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Первые одиозные числа: 1, 2, 4, 7, 8, 11, 13, 14, 16, 19, 21, 22, 25, 26, 28, 31, 32, 35, 37, 38 …](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_odious_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(Одиозное число)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Числа, которые не являются одиозными, называются злыми числами, то есть не существует натурального числа, которое не было бы ни злым, ни одиозным.](* <- lang_ru;; *);;
+		*);;
+	*);;

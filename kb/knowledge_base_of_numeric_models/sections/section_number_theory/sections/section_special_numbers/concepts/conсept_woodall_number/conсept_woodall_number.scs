@@ -1,0 +1,48 @@
+sc_node_not_relation -> concept_woodall_number;; 
+
+concept_woodall_number => nrel_main_idtf:
+[число Вудала](*<-lang_ru;;*);
+[woodall number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_woodall_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (Число Вудала)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://woodall_number_statement1.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_woodall_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв. (Число Вудала)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://woodall_number_statement2.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_woodall_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(Число Вудала)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Числа Вудала, являющиеся простыми числами, называются простыми числами Вудала.](* <- lang_ru;; *);;
+		*);;
+	*);;

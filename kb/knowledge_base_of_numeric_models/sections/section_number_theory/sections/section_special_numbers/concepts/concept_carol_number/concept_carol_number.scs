@@ -1,0 +1,59 @@
+sc_node_not_relation -> concept_carol_number;; 
+
+concept_carol_number => nrel_main_idtf:
+[числа Кэрола](*<-lang_ru;;*);
+[Carol number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_carol_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (числа Кэрола)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://carol_number.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_carol_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(числа Кэрола; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Несколько первых чисел Кэрола: 1, 7, 47, 223, 959, 3967, 16 127, 65 023, 261 119, 1 046 527](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_carol_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(числа Кэрола)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Для n > 2 двоичное представление n-го числа Кэрола состоит из n − 2 последовательных единиц, единственного нуля и еще n + 1 последовательных единиц, или, в алгебраической форме.](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_carol_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(числа Кэрола)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[К июлю 2007 года наибольшее известное число Кэрола, являющееся простым, — число для n = 253 987, имеющее 152 916 знаков.](* <- lang_ru;; *);;
+		*);;
+	*);;

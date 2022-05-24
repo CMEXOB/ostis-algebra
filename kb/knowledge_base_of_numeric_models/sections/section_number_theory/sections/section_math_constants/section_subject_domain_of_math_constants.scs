@@ -9,8 +9,36 @@ section_subject_domain_of_math_constants <- nrel_system_identifier;;
   
 section_subject_domain_of_math_constants -> rrel_key_sc_element:
     subject_domain_of_math_constants;
+    concept_aperi_constant;
+    concept_bruns_constants;
+    concept_caens_constant;
+    concept_catalana_constant;
+    concept_de_bruijn_newman_constant;
+    concept_dotty_number;
+    concept_embry_trefeten_constant;
+    concept_erdos_borwein_constant;
+    concept_euler_mascheroni_constant;
+    concept_feigenbaum_constants;
+    concept_glacier_kinkelin_constant;
+    concept_golden_ratio;
+    concept_golomb_dickman_constant;
+    concept_khaitins_constant;
+    concept_khinchin_constant;
+    concept_landau_ramanujan_constant;
+    concept_laplace_limit;
+    concept_legendre_constant;
     concept_math_const_e;
-    concept_math_const_pi;;
+    concept_math_const_pi;
+    concept_meissel_mertens_constant;
+    concept_mills_constant;
+    concept_paul_gauss_constant;
+    concept_plastic_number;
+    concept_pythagorean_constant;
+    concept_ramanujan_soldner_constant;
+    concept_prime_twin_constant;
+    concept_simple_twin_constant;
+    concept_theodores_constant;
+    concept_viswanath_constant;;
 
 section_subject_domain_of_math_constants = [*
     subject_domain_of_math_constants => nrel_main_idtf:
@@ -19,6 +47,34 @@ section_subject_domain_of_math_constants = [*
     <- subject_domain;;
 
     subject_domain_of_math_constants -> rrel_not_maximum_studied_object_class:
+        concept_aperi_constant;
+        concept_bruns_constants;
+        concept_caens_constant;
+        concept_catalana_constant;
+        concept_de_bruijn_newman_constant;
+        concept_dotty_number;
+        concept_embry_trefeten_constant;
+        concept_erdos_borwein_constant;
+        concept_euler_mascheroni_constant;
+        concept_feigenbaum_constants;
+        concept_glacier_kinkelin_constant;
+        concept_golden_ratio;
+        concept_golomb_dickman_constant;
+        concept_khaitins_constant;
+        concept_khinchin_constant;
+        concept_landau_ramanujan_constant;
+        concept_laplace_limit;
+        concept_legendre_constant;
         concept_math_const_e;
-        concept_math_const_pi;;
+        concept_math_const_pi;
+        concept_meissel_mertens_constant;
+        concept_mills_constant;
+        concept_paul_gauss_constant;
+        concept_plastic_number;
+        concept_pythagorean_constant;
+        concept_ramanujan_soldner_constant;
+        concept_prime_twin_constant;
+        concept_simple_twin_constant;
+        concept_theodores_constant;
+        concept_viswanath_constant;;
 *];;

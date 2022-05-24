@@ -1,0 +1,47 @@
+sc_node_not_relation -> concept_Carmichael_number;; 
+
+concept_Carmichael_number => nrel_main_idtf:
+[число Кармайкла](*<-lang_ru;;*);
+[Carmichael number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_Carmichael_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (число Кармайкла)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://Carmichael_number.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_Carmichael_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(число Кармайкла; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Последовательность чисел начинается так: 	561, 41041, 825265, 321197185, 5394826801, 232250619601, 9746347772161, 1436697831295441, 60977817398996785, 7156857700403137441, 1791562810662585767521, ... ](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_Carmichael_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(число Кармайкла)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Такие числа относительно редки, но их бесконечное число, наименьшее из них — 561; существование таких чисел делает недостаточным условие простоты малой теоремы Ферма, и не позволяет применять тест Ферма как универсальное средство проверки простоты.](* <- lang_ru;; *);;
+		*);;
+	*);;

@@ -1,0 +1,54 @@
+sc_node_struct -> section_subject_domain_of_prime_numbers;;
+
+section_subject_domain_of_prime_numbers => nrel_main_idtf:
+    [Раздел. Предметная область простых чисел] (* <- lang_ru;; *);
+    [Section. Subject domain of prime numbers] (* <- lang_en;; *);
+<- non_atomic_section;;
+
+section_subject_domain_of_prime_numbers <- nrel_system_identifier;;
+  
+section_subject_domain_of_prime_numbers -> rrel_key_sc_element:
+    subject_domain_of_prime_numbers;
+    concept_prime_number;
+    concept_factorial_prime_number;
+    concept_mersenne_prime;
+    concept_primorial_prime_number;
+    concept_prime_wagstaff_number;
+    concept_prime_wilson_number;
+    concept_cube_prime_number;
+    concept_chan_prime_number;
+    concept_Pythagorean_prime_number;
+    concept_Wieferich_prime_number;
+    concept_primorial_prime;
+    concept_palindromic_prime_number;
+    concept_superprime_number;
+    concept_semiprime_number;
+    concept_balanced_prime_number;;
+
+
+section_subject_domain_of_prime_numbers = [*
+    subject_domain_of_prime_numbers => nrel_main_idtf:
+        [Предметная область проcтых чисел] (* <- lang_ru;; *);
+        [Subject domain of prime numbers] (* <- lang_en;; *);
+    <- subject_domain;;
+
+    subject_domain_of_prime_numbers -> rrel_maximum_studied_object_class:
+        concept_prime_number;;
+
+
+    subject_domain_of_prime_numbers -> rrel_not_maximum_studied_object_class:
+        concept_factorial_prime_number;
+        concept_mersenne_prime;
+        concept_primorial_prime_number;
+        concept_prime_wagstaff_number;
+        concept_prime_wilson_number;
+        concept_cube_prime_number;
+        concept_chan_prime_number;
+        concept_Pythagorean_prime_number;
+        concept_Wieferich_prime_number;
+        concept_primorial_prime;
+        concept_palindromic_prime_number;
+        concept_superprime_number;
+        concept_semiprime_number;
+        concept_balanced_prime_number;;
+*];;

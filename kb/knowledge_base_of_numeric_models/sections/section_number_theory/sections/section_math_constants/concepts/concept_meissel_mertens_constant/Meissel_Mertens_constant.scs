@@ -1,0 +1,69 @@
+sc_node_not_relation->concept_meissel_mertens_constant;; 
+concept_meissel_mertens_constant=>nrel_main_idtf: [константа Майсселя-Мертенса](*<-lang_ru;;*);	[Meissel-Mertens constant](*<-lang_en;;*);;
+
+concept_meissel_mertens_constant=>nrel_idtf:	[0,261];		[M](*<-lang_en;;*);;
+
+concept_meissel_mertens_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Константа Майсселя-Мертенса)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Майсселя-Мертенса - это математическая константа в теории чисел, определяемая как предел разности между гармоническим рядом, суммируемым только по простым числам, и натуральным логарифмом натурального логарифма. Обозначается буквой «M». M=0,261497212…](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_first_feigenbaum_constant <= nrel_using_constants:
+	{
+	nrel_limit;
+	nrel_natural_logarithm;
+    concept_harmonic_series;
+	concept_prime_number
+	};;
+
+concept_meissel_mertens_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(иррациональное число)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Майсселя-Мертенса иррациональна.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_meissel_mertens_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(свойство константы Майсселя-Мертенса)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://example.png";;
+		*);;
+	*);;
+
+
+concept_meissel_mertens_constant<-concept_number;;
+concept_meissel_mertens_constant<-concept_irrational_number;;
+
+
+concept_meissel_mertens_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(Константа Майсселя-Мертенса)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[M=0,261…. В простых случаях достаточно знать первые 4 знака (0,261). Но для более сложных случаев и там, где нужна большая точность необходимо знать больше, чем 4 цифры. Первые 35 знаков M после запятой 0,261 497 212 847 642 783 755 426 838 608 695 85...](* <- lang_ru;; 	*);;
+		*);;
+	*);;

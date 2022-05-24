@@ -1,0 +1,49 @@
+sc_node_not_relation->concept_theodores_constant;; 
+concept_theodores_constant=>nrel_main_idtf: [константа Феодора](*<-lang_ru;;*);	[theodores constant](*<-lang_en;;*);;
+
+concept_theodores_constant=>nrel_idtf:	[1,732]; [квадратный корень из 3](*<-lang_ru;;*);	[square root of 3](*<-lang_en;;*);;
+
+concept_theodores_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(константа Феодора)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Феодора - квадратный корень из 3, математическая константа, иррациональное число. Константа Феодора=1,414213562…](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_theodores_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(иррациональное число)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Феодора иррациональна.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_theodores_constant<-concept_number;;
+concept_theodores_constant<-concept_irrational_number;;
+
+
+
+concept_theodores_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(константа Феодора)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Феодора=1,732…. В простых случаях достаточно знать первые 4 знака (1,732). Но для более сложных случаев и там, где нужна большая точность необходимо знать больше, чем 4 цифры. Первые 35 знаков константы Феодора после запятой 1,732 050 807 568 877 293 527 446 341 505 872 37...](* <- lang_ru;; 	*);;
+		*);;
+	*);;

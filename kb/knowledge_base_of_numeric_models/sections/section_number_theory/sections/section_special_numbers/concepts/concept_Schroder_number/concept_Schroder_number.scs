@@ -1,0 +1,39 @@
+sc_node_not_relation -> concept_Schroder_number;; 
+
+concept_Schroder_number => nrel_main_idtf:
+[числа Шрёдера](*<-lang_ru;;*);
+[schroder number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_Schroder_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (числа Шрёдера)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Числа Шрёдера в комбинаторике описывают количества путей из левого нижнего угла квадратной решётки n×n в противоположный по диагонали угол, используя только ходы вверх, вправо или вверх-вправо («ходом короля»), с дополнительным условием, что пути не поднимаются выше упомянутой диагонали.](* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_Schroder_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(числа Шрёдера; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Последовательность больших чисел Шрёдера начинается так: 1, 2, 6, 22, 90, 394, 1806, 8558, …  ](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_Schroder_number -> rrel_example :
+		"file://schroder.png";;

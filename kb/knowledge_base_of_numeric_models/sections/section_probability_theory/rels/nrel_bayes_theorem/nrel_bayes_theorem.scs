@@ -1,0 +1,31 @@
+sc_node_norole_relation ->  nrel_bayes_theorem;;
+
+nrel_bayes_theorem => nrel_main_idtf:
+[теорема байеса*](*<-lang_ru;;*);
+[bayes theorem*](*<-lang_en;;*);;
+
+ 
+
+nrel_bayes_theorem <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Теорема Байеса* )]  (* <- lang_ru;; *);;
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Теорема Байеса позволяет определить вероятность события при условии, что произошло другое статистически взаимозависимое с ним событие.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_bayes_theorem -> rrel_example :
+		"file://bayes.png";;
+
+
+
+
+nrel_bayes_theorem <- ternary_relation;;
+nrel_bayes_theorem <= nrel_first_domain: concept_number;;
+nrel_bayes_theorem <= nrel_second_domain: concept_number;;
+nrel_bayes_theorem <= nrel_third_domain: concept_number;;

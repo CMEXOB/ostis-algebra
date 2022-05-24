@@ -1,0 +1,48 @@
+sc_node_not_relation -> concept_primorial_prime;; 
+
+concept_primorial_prime => nrel_main_idtf:
+[праймориальное простое число](*<-lang_ru;;*);
+[primorial prime number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_primorial_prime <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (праймориальное простое число)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://concept_primorial_prime.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_primorial_prime <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(праймориальное простое число; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+            "file://concept_primorial_prime2.html"(* <- lang_ru;; *);;	
+    	*);;
+	*);;
+concept_primorial_prime <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(праймориальное простое число)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[К марту 2021 года максимальным известным праймориальным простым числом было 1098133# − 1 (n = 85586) с 476,311 знаками. ](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_primorial_prime <= nrel_using_constants: concept_natural_number;concept_prime_number;;

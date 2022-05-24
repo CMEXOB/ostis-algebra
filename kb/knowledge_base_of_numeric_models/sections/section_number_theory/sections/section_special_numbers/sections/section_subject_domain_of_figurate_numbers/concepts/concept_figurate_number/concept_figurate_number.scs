@@ -1,0 +1,51 @@
+sc_node_not_relation -> concept_figurate_number;; 
+
+concept_figurate_number => nrel_main_idtf:
+[фигурное число](*<-lang_ru;;*);
+[figurate number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_figurate_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (фигурное число)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Фигу́рные чи́сла — числа, которые можно представить с помощью геометрических фигур.](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_figurate_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (фигурное число)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Это историческое понятие восходит к пифагорейцам, которые развивали алгебру на геометрической основе и представляли любое положительное целое число в виде набора точек на плоскости. Отголоском этого подхода остались выражения «возвести число в квадрат» или «в куб».](* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_figurate_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(фигурное число; разбиение* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[В свою очередь, каждый класс фигурных чисел делится на разновидности, каждая из которых связана с определённой геометрической фигурой: треугольником, квадратом, тетраэдром и т. д.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+
+concept_figurate_number <= nrel_using_constants: concept_natural_number;;

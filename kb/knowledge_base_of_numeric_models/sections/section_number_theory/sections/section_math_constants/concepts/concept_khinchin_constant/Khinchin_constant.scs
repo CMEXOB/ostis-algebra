@@ -1,0 +1,53 @@
+sc_node_not_relation->concept_khinchin_constant;; 
+concept_khinchin_constant=>nrel_main_idtf: [постоянная Хинчина](*<-lang_ru;;*);	[Khinchin constant](*<-lang_en;;*);;
+
+concept_khinchin_constant=>nrel_idtf:	[2,685452001065];		[K0](*<-lang_en;;*);;
+
+concept_khinchin_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Постоянная Хинчина)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Постоянная Хинчина - вещественная константа, равная среднему геометрическому элементов разложения в цепную дробь любого из почти всех вещественных чисел. Обозначается буквой «K0». K0=2,685452001065…](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_khinchin_constant <= nrel_using_constants:
+	{
+	nrel_geometric_average;
+	real_number
+	};;
+
+concept_khinchin_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(постоянная Хинчина может быть представлена в виде ряда)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://example.png";;
+		*);;
+	*);;
+
+
+concept_khinchin_constant<-concept_number;;
+
+
+concept_khinchin_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(Постоянная Хинчина)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[K0 принято считать равной 2,685452001065](* <- lang_ru;; 	*);;
+		*);;
+	*);;

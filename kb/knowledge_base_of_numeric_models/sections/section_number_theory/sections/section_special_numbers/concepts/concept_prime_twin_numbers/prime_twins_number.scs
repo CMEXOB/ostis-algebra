@@ -1,0 +1,58 @@
+sc_node_not_relation->concept_prime_twins_number;; 
+
+concept_prime_twins_number=>nrel_main_idtf:
+[простые числа-близнецы](*<-lang_ru;;*);
+[prime twin numbers](*<-lang_en;;*);;
+
+
+concept_prime_twins_number => nrel_idtf:[простые близнецы](*<-lang_ru;;*);;
+
+
+concept_prime_twins_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(простые числа-близнецы)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Простые числа-близнецы - пара простых числе отличающиеся на 2.](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+
+
+concept_prime_twins_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(формула простых чисел-близнецов(n - натуральное число))] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Все числа-близнецы, кроме пары (3, 5) подчиняются формуле 6*n +- 1.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(наибольшие простые числа-близнецы)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[2003663613*2^195000 +- 1]
+			(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_prime_number=>nrel_inclusion : concept_prime_twins_number;;
+concept_prime_twins_number <= nrel_using_constants: concept_prime_number;concept_natural_number;nrel_subtraction;;
+
+
+concept_prime_twins_number -> rrel_example :{3;5}; {5;7}; {11;13};;
+	
+concept_prime_twins_number -> rrel_example:	"file://table.png";;

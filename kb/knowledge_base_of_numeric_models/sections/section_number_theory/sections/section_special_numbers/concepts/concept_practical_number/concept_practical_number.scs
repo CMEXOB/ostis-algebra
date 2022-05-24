@@ -1,0 +1,40 @@
+sc_node_not_relation -> concept_practical_number;; 
+
+concept_practical_number => nrel_main_idtf:
+[практичное число](*<-lang_ru;;*);
+[practical number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_practical_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (Практичное число)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Практичное число или панаритмичное число — это положительное целое число n, такое что все меньшие положительные целые числа могут быть представлены в виде суммы различных делителей числа n.](* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_practical_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(Практичное число; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Последовательность практичных чисел начинается с 1, 2, 4, 6, 8, 12, 16, 18, 20, 24, 28, 30, 32, 36, 40, 42, 48, 54, 56, 60, 64, 66, 72, 78, 80, 84, 88, 90, 96, 100, 104, 108, 112, 120, 126, 128, 132, 140, 144, 150...](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_practical_number -> rrel_example :
+		"file://practical.png";;
+
+

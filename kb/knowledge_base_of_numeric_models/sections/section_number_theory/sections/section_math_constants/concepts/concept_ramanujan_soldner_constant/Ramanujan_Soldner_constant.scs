@@ -1,0 +1,52 @@
+sc_node_not_relation->concept_ramanujan_soldner_constant;; 
+concept_ramanujan_soldner_constant=>nrel_main_idtf: [константа Рамануджана-Солднера](*<-lang_ru;;*);	[Ramanujan-Soldner constant](*<-lang_en;;*);;
+
+concept_ramanujan_soldner_constant=>nrel_idtf:	[1,451];		[μ](*<-lang_en;;*);;
+
+concept_ramanujan_soldner_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(константа Рамануджана-Солднера)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Рамануджана-Солднера - значение единственного положительного корня интегрального логарифма. Обозначается буквой «μ». μ=1,451369234…](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_ramanujan_soldner_constant <= nrel_using_constants:
+	{
+	nrel_integrated_logarithm
+	};;
+
+concept_ramanujan_soldner_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(неизвестность рациональность числа)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Неизвестно, является ли константа Рамануджана-Солднера рациональной или иррациональной.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_ramanujan_soldner_constant<-concept_number;;
+
+
+concept_ramanujan_soldner_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(константа Рамануджана-Солднера)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[μ=1,451…. В простых случаях достаточно знать первые 4 знака (1,451). Но для более сложных случаев и там, где нужна большая точность необходимо знать больше, чем 4 цифры. Первые 33 знаков μ после запятой 1,451 369 234 883 381 050 283 968 485 892 027...](* <- lang_ru;; 	*);;
+		*);;
+	*);;

@@ -1,0 +1,41 @@
+sc_node_not_relation -> concept_k_function;;
+
+concept_k_function=>nrel_main_idtf:
+[k functions](*<-lang_en;;*);
+[к-функция](*<-lang_ru;;*);;
+
+//определения и пояснения
+concept_k_function<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(к-функция)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(* 
+->rrel_example:
+      [К-функция — функция, являющаяся обобщением гиперфакториала для комплексных чисел.](*<-lang_ru;;*);;
+*);;
+*);;
+
+concept_k_function -> rrel_example:	"file://k_fun.png";;
+
+
+concept_analytic_function=>nrel_inclusion : concept_k_function;;
+concept_k_function <= nrel_using_constants: nrel_hyperfactorial;concept_complex_number;nrel_logarithm;;
+
+
+//утверждения
+concept_k_function<-rrel_key_sc_element:
+...
+(*
+=>nrel_main_idtf:[Утв.(нахождение К-функции)](*<-lang_ru;;*);;
+<-sc_statement;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+     "file://example.png"(*<-lang_ru;;*);;
+*);;
+*);;
+

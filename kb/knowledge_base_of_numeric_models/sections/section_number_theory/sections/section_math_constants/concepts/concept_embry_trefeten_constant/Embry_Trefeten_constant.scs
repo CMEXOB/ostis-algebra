@@ -1,0 +1,48 @@
+sc_node_not_relation->concept_embry_trefeten_constant;; 
+concept_embry_trefeten_constant=>nrel_main_idtf: [константа Эмбри-Трефетена](*<-lang_ru;;*);	[Embry-Trefeten constant](*<-lang_en;;*);;
+
+concept_embry_trefeten_constant=>nrel_idtf:	[0,70258];		[β*](*<-lang_en;;*);;
+
+concept_embry_trefeten_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Константа Эмбри-Трефетена)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Эмбри-Трефетена - математическая константа, предстваляющая собой пороговое значение. Обозначается как «β*». β*=0,70258](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_embry_trefeten_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(рациональное число)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Эмбри-Трефетена рациональнальная.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_embry_trefeten_constant<-concept_number;;
+concept_embry_trefeten_constant<-concept_rational_number;;
+
+
+concept_embry_trefeten_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(Константа Эмбри-Трефетена]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Эмбри-Трефетена имеет фиксированное значение: β*=0,70258.](* <- lang_ru;; 	*);;
+		*);;
+	*);;

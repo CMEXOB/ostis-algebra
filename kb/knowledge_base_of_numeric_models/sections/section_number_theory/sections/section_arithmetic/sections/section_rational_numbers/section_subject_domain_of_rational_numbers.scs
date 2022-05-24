@@ -17,6 +17,9 @@ section_subject_domain_of_rational_numbers -> rrel_key_sc_element:
     concept_positive_fraction;
     concept_improper_fraction;
     concept_proper_fraction;
+    rrel_antier;
+    rrel_mantissa;
+    nrel_decomposition_into_antiier_and_mantissa;
     rrel_denominator;
     nrel_expansion_of_fraction;
     nrel_division_of_mixed_fractions;
@@ -61,6 +64,9 @@ section_subject_domain_of_rational_numbers = [*
         concept_proper_fraction;;
 
     subject_domain_of_rational_numbers -> rrel_explored_relation:
+        rrel_antier;
+        rrel_mantissa;
+        nrel_decomposition_into_antiier_and_mantissa;
         rrel_denominator;
         nrel_expansion_of_fraction;
         nrel_division_of_mixed_fractions;

@@ -1,0 +1,48 @@
+sc_node_not_relation -> concept_Pythagorean_prime_number;; 
+
+concept_Pythagorean_prime_number => nrel_main_idtf:
+[простые числа Пифагора](*<-lang_ru;;*);
+[Pythagorean prime number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_Pythagorean_prime_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (простые числа Пифагора)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Простое число Пифагора — это простое число вида 4n + 1.](* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_Pythagorean_prime_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(простые числа Пифагора; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Несколько первых простых чисел Пифагора: 5, 13, 17, 29, 37, 41, 53, 61, 73, 89, 97, 101, 109, 113, …](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_Pythagorean_prime_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(простые числа Пифагора)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Простые числа Пифагора представимы в виде суммы двух квадратов (отсюда и название чисел) ](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_Pythagorean_prime_number <= nrel_using_constants: concept_natural_number;concept_prime_number;;

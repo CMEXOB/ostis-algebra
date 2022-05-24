@@ -1,0 +1,49 @@
+sc_node_not_relation -> concept_chan_prime_number;; 
+
+concept_chan_prime_number => nrel_main_idtf:
+[простое число Ченя](*<-lang_ru;;*);
+[bell number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_chan_prime_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (простое число Ченя)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Простое число Чэня — простое число p такое, что p+2 — простое или произведение двух простых.](* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_chan_prime_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(простое число Ченя; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Несколько первых простых чисел Чэня: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 47, 53, 59, 67, 71, 83, 89, 101, … .](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_chan_prime_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(простое число Ченя)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Меньшее в паре простых-близнецов является по определению простым Чэня. Таким образом, 2996863034895*2^1290000 - 1 (с 388342 десятичными знаками), найденное в проекте PrimeGrid, представляет собой наибольшее известное простое Чэня на 04 февраля 2022 года](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+

@@ -1,0 +1,39 @@
+sc_node_not_relation->concept_viswanath_constant;; 
+concept_viswanath_constant=>nrel_main_idtf: [константа Висваната](*<-lang_ru;;*);	[Viswanath constant](*<-lang_en;;*);;
+
+concept_viswanath_constant=>nrel_idtf:	[1,13198824];;
+
+concept_viswanath_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(константа Висваната)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Висваната - действительное число, n-я степень которого приближается к абсолютному значению n-го члена некоторых случайных последовательностей Фибоначчи, особенно по мере увеличения n. Не имеет буквы-обозначения. Константа Висваната равна 1,13198824](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_viswanath_constant <= nrel_using_constants:
+	{
+	concept_fibonacci_numbers
+	};;
+
+
+concept_viswanath_constant<-concept_number;;
+
+
+concept_viswanath_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(константа Висваната)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Дивакар Вишванат дал своей константе всего с восемью знаками после запятой как 1,13198824. Вишванат считал, что логарифм константы лежит между 0,123975598 и 0,1239755995.](* <- lang_ru;; 	*);;
+		*);;
+	*);;

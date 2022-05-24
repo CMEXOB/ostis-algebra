@@ -1,0 +1,42 @@
+sc_node_not_relation->concept_de_bruijn_newman_constant;; 
+concept_de_bruijn_newman_constant=>nrel_main_idtf: [константа де Брёйна-Ньюмана](*<-lang_ru;;*);	[De Bruijn-Newman constant](*<-lang_en;;*);;
+
+concept_de_bruijn_newman_constant=>nrel_idtf:	[Λ](*<-lang_en;;*);;
+
+concept_de_bruijn_newman_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Константа де Брёйна-Ньюмана)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа де Брёйна-Ньюмана - математическая константа, тесно связаная с гипотезой Римана относительно нулей дзета-функции Римана. Обозначается буквой «Λ».](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_first_feigenbaum_constant <= nrel_using_constants:
+	{
+    concept_riemann_hypothesis;
+	concept_riemann_zeta_functions
+	};;
+
+
+concept_de_bruijn_newman_constant<-concept_number;;
+concept_de_bruijn_newman_constant<-concept_irrational_number;;
+
+
+concept_de_bruijn_newman_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(константа де Брёйна-Ньюмана)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Диапозон вычисления константа де Брёйна-Ньюмана: 0,22 >= Λ >= 0. Не имеет общее принятого значения.](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+

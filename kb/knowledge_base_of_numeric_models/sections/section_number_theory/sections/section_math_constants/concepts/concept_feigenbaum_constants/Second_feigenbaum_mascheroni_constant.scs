@@ -1,0 +1,54 @@
+sc_node_not_relation->concept_second_feigenbaum_constant;; 
+concept_second_feigenbaum_constant=>nrel_main_idtf: [вторая константа Фейгенбаума](*<-lang_ru;;*);	[Feigenbaum constant](*<-lang_en;;*);;
+
+concept_second_feigenbaum_constant=>nrel_idtf:	[2,502];		[α](*<-lang_en;;*);;
+
+concept_second_feigenbaum_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Вторая константа Фейгенбаума)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Вторая константа Фейгенбаума — определяется как предел отношения между шириной ветвей на диаграмме бифуркаций. Обозначается буквой «α». α=2,502907875…](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_second_feigenbaum_constant <= nrel_using_constants:
+	{
+	nrel_limit;
+    concept_rossler_system
+	};;
+
+concept_second_feigenbaum_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(иррациональное число, трансцендентное число)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Вторая константа Фейгенбаума рациональнальное и трансцендентное число.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_second_feigenbaum_constant<-concept_number;;
+concept_second_feigenbaum_constant<-concept_irrational_number;;
+
+
+concept_second_feigenbaum_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(Вторая константа Фейгенбаума)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[α=2,502…. В простых случаях достаточно знать первые 4 знака (2,502). Но для более сложных случаев и там, где нужна большая точность необходимо знать больше, чем 4 цифры. Первые 35 знаков α после запятой 2,502 907 875 095 892 822 283 902 873 218 215 78...](* <- lang_ru;; 	*);;
+		*);;
+	*);;

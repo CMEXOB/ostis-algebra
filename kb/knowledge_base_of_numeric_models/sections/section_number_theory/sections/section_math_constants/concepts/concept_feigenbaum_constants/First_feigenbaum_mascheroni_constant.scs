@@ -1,0 +1,67 @@
+sc_node_not_relation->concept_first_feigenbaum_constant;; 
+concept_first_feigenbaum_constant=>nrel_main_idtf: [первая константа Фейгенбаума](*<-lang_ru;;*);	[Feigenbaum constant](*<-lang_en;;*);;
+
+concept_first_feigenbaum_constant=>nrel_idtf:	[4,669];		[δ](*<-lang_en;;*);;
+
+concept_first_feigenbaum_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Первая константа Фейгенбаума)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Первая константа Фейгенбаума — характеризует каскад удвоения периода во многих сложных динамических системах, таких, как система Рёсслера, турбулентность, рост популяций . Обозначается буквой «δ». δ=4,669201609…](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_first_feigenbaum_constant <= nrel_using_constants:
+	{
+	nrel_limit;
+    concept_rossler_system
+	};;
+
+concept_first_feigenbaum_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(иррациональное число, трансцендентное число)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Первая константа Фейгенбаума рациональнальное и трансцендентное число.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_first_feigenbaum_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(свойство первой постоянной Фейгенбаума)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[δ = lim(n->∞)((a(n-1) - a(n-2))/(a(n) - a(n-1)))](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_first_feigenbaum_constant<-concept_number;;
+concept_first_feigenbaum_constant<-concept_irrational_number;;
+
+
+concept_first_feigenbaum_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(Первая константа Фейгенбаума)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[δ=4,669…. В простых случаях достаточно знать первые 4 знака (4,669). Но для более сложных случаев и там, где нужна большая точность необходимо знать больше, чем 4 цифры. Первые 35 знаков δ после запятой 4,669 201 609 102 990 671 853 203 820 466 201 61...](* <- lang_ru;; 	*);;
+		*);;
+	*);;

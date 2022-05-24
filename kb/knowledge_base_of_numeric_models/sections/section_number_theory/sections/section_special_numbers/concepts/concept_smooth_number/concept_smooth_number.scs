@@ -1,0 +1,38 @@
+sc_node_not_relation -> concept_smooth_number;; 
+
+concept_smooth_number => nrel_main_idtf:
+[гладкое число](*<-lang_ru;;*);
+[smooth number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_smooth_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (гладкое число)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[В теории чисел гладким числом называется целое число, все простые делители которого малы. Поскольку понятие «делители малы» может быть истрактовано вольно, чаще всего гладким числом называют такое, чьи простые делители не превосходят 10](* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_smooth_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(гладкое число)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Натуральное число называется B-гладким, если все его простые делители не превосходят B.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_smooth_number -> rrel_example :
+		"file://smooth_number1.html"(* <- lang_ru;; *);;

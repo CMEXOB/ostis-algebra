@@ -1,0 +1,37 @@
+sc_node_norole_relation -> nrel_prime_twin;; 
+
+nrel_prime_twin =>nrel_main_idtf:
+[простой близнец* ](*<-lang_ru;;*);
+[prime_twin* ](*<-lang_en;;*);;
+
+nrel_prime_twin <= nrel_using_constants: concept_prime_number;concept_prime_twins_number;;
+
+nrel_prime_twin <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(простой близнец*)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Простой близнец числа a - это число b, которое образует с числом a пару простых чисел-близнецов.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_prime_twin <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(простой близнец*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Все простые числа близнецы, кроме 5, имеют ровно одного простого близнеца.] (* <- lang_ru;; *);;
+		*);;
+	*);;
+
+nrel_prime_twin <- binary_relation;;
+nrel_prime_twin <= nrel_first_domain: concept_prime_number;;
+nrel_prime_twin <= nrel_second_domain: concept_prime_number;;

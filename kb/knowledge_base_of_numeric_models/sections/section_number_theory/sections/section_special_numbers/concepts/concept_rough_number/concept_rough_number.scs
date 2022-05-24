@@ -1,0 +1,31 @@
+sc_node_not_relation -> concept_rough_number;; 
+
+concept_rough_number => nrel_main_idtf:
+[грубое число](*<-lang_ru;;*);
+[rough number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_rough_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (Грубое число)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[k-грубое число является положительным целым числом, все простые множители которого больше или равны k. k-грубость поочерёдно определяется как требование, чтобы все простые множители строго превышали k](* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+concept_rough_number -> rrel_example :
+		[Каждое нечётное положительное целое число является 3-грубым.](* <- lang_ru;; *);;
+    
+concept_rough_number -> rrel_example :
+		[Каждое положительное целое число, которое конгруэнтно к 1 или 5 по модулю 6, является 5-грубым.](* <- lang_ru;; *);;
+
+concept_rough_number -> rrel_example :
+		[Каждое положительное целое число является 2-грубым, поскольку все его простые множители, будучи простыми числами, превосходят 1.](* <- lang_ru;; *);;
+
+

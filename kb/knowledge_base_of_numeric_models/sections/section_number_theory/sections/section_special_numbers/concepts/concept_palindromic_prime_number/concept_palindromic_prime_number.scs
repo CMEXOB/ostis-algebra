@@ -1,0 +1,48 @@
+sc_node_not_relation -> concept_palindromic_prime_number;; 
+
+concept_palindromic_prime_number => nrel_main_idtf:
+[простые числа-палиндромы](*<-lang_ru;;*);
+[palindromic prime number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_palindromic_prime_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (простые числа-палиндромы)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Простое число-палиндром — простое число, которое также является палиндромом, то есть его запись одинаково читается как справа налево, так и слева направо. Палиндромичность зависит от выбранного основания системы счисления, тогда как простота — нет.](* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_palindromic_prime_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(простые числа-палиндромы; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Несколько первых простых чисел-палиндромов в десятичной системе счисления: 2, 3, 5, 7, 11, 101, 131, 151, 181, 191, 313, 353, 373, 383, 727, 757, 787, 797, 919, 929,…](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_palindromic_prime_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(простые числа-палиндромы)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://concept_palindromic_prime_number.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_palindromic_prime_number <= nrel_using_constants: concept_palindromic_number;concept_prime_number;;

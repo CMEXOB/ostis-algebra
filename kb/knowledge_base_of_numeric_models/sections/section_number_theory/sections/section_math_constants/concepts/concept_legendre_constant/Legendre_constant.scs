@@ -1,0 +1,53 @@
+sc_node_not_relation->concept_legendre_constant;; 
+concept_legendre_constant=>nrel_main_idtf: [константа Лежандра](*<-lang_ru;;*);	[Legendre constant](*<-lang_en;;*);;
+
+concept_legendre_constant=>nrel_idtf:	[1];		[B´L](*<-lang_en;;*);;
+
+concept_legendre_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Константа Лежандра)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Лежандра - математическая константа, появляющаяся в гипотетической формуле, предложенной Адриеном Мари Лежандром для асимптотического поведения функции распределения простых чисел. Обозначается буквой «B´L». B´L=1](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_legendre_constant <= nrel_using_constants:
+	{
+    concept_distribution_function_of_prime_numbers
+	};;
+
+concept_legendre_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(натуральное число)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Лежандра натуральное число.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_legendre_constant<-concept_number;;
+concept_legendre_constant<-concept_natural_number;;
+
+
+concept_legendre_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(Константа Лежандра)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Раньше считалось, что B´L=1,08366, но недавно было доказано ошибочность этого суждения, и что B´L=1. В данный момент константа Лежандра имеет лишь историческое значение](* <- lang_ru;; 	*);;
+		*);;
+	*);;

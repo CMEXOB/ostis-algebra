@@ -1,0 +1,54 @@
+sc_node_norole_relation -> nrel_decomposition_into_antiier_and_mantissa;;
+nrel_decomposition_into_antiier_and_mantissa => nrel_main_idtf:	[разложение на антье и мантиссу* ](* <- lang_ru;; *);  [decomposition_into_antiier_and_mantissa* ](* <- lang_en;; *);;
+
+nrel_decomposition_into_antiier_and_mantissa <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:[Опр.(разложение на антье и мантиссу*)](*<- lang_ru;;*);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation:
+			...
+		(*=> nrel_main_idtf:[Утв.(слагаемое'; сумма'; число)](*<-lang_ru;;*);;
+	<-sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[От перемены мест слагаемых сумма двух чисел не меняется : а+b=b+a.](*<-lang_ru;;*);;
+		*);;
+	      -> rrel_example:
+			[Разложение на антье и мантиссу - разложение любого числа на сумму его антье и мантиссы. ](*<-lang_ru;;*);;
+		*);;
+	*);;
+
+
+nrel_decomposition_into_antiier_and_mantissa <- rrel_key_sc_element:
+ 	...
+	(*
+	=> nrel_main_idtf:[Пояснение.(разложение на антье и мантиссу*)](*<- lang_ru;;*);;
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Любое число представляется единственным способом в виде суммы целой и дробной частей.](*<-lang_ru;;*);;
+		*);;
+	*);;
+
+nrel_decomposition_into_antiier_and_mantissa <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:[Утв.(число; антье'; мантисса')](*<-lang_ru;;*);;
+	<-sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Сумма антье и мантиссы некоторого числа равно самому числу.](*<-lang_ru;;*);;
+		*);;
+	*);;
+
+nrel_decomposition_into_antiier_and_mantissa <- ternary_relation;;
+nrel_decomposition_into_antiier_and_mantissa <= nrel_first_domain: concept_number;;
+nrel_decomposition_into_antiier_and_mantissa <= nrel_second_domain: concept_number;;
+nrel_decomposition_into_antiier_and_mantissa <= nrel_third_domain: concept_number;;

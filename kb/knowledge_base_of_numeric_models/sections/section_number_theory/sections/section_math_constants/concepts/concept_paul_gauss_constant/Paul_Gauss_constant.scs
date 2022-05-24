@@ -1,0 +1,20 @@
+sc_node_not_relation->concept_paul_gauss_constant;; 
+concept_paul_gauss_constant=>nrel_main_idtf: [константа Поля-Гаусса](*<-lang_ru;;*);	[Paul-Gauss constant](*<-lang_en;;*);;
+
+concept_paul_gauss_constant=>nrel_idtf:	[3,058198247456354132564564787888767];		[J](*<-lang_en;;*);;
+
+concept_paul_gauss_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(константа Поля-Гаусса)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Обозначается буквой «J». J=3,058198247456354132564564787888767…](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+
+concept_paul_gauss_constant<-concept_number;;

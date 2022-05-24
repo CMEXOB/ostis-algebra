@@ -1,0 +1,44 @@
+sc_node_not_relation -> concept_square_tringle_number;; 
+
+concept_square_tringle_number => nrel_main_idtf:
+[квадратное треугольное число](*<-lang_ru;;*);
+[square tringle number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_square_tringle_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (квадратное треугольное число)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[В теории чисел квадратным треугольным числом (или треугольным квадратным числом) называется число, являющееся как треугольным, так и квадратным.](* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_square_tringle_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(квадратное треугольное число; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Квадратные треугольные числа образуют последовательность: 0, 1, 36, 1225, 41616, 1413721, 48024900, 1631432881, 55420693056, 1882672131025, … ](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_square_tringle_number -> rrel_example :
+		[Например, число 36 является и квадратным 6*6, и треугольным (9*8)/2](* <- lang_ru;; *);;
+        
+concept_square_tringle_number -> rrel_example :
+		"file://squareTriangle.png";;
+
+
+concept_square_tringle_number <= nrel_using_constants: concept_triangle_number;concept_square_number;;

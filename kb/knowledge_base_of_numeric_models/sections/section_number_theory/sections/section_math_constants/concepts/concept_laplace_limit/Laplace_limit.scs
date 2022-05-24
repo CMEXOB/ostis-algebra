@@ -1,0 +1,62 @@
+sc_node_not_relation->concept_laplace_limit;; 
+concept_laplace_limit=>nrel_main_idtf: [предел Лапласа](*<-lang_ru;;*);	[Laplace limit](*<-lang_en;;*);;
+
+concept_laplace_limit=>nrel_idtf:	[0,662];;
+
+
+concept_laplace_limit <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Предел Лапласа)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Предел Лапласа - максимальное значение эксцентриситета, при котором решение уравнения Кеплера, выраженное в виде ряда по эксцентриситету, сходится. Не имеет буквой-обозначения. Предел Лапласа равен 0,662743419…](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_laplace_limit <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(иррациональное число)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Предел Лапласа иррационален.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_laplace_limit <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(Предел Лапласа равен решению уравнения)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://example.png";;
+		*);;
+	*);;
+
+
+concept_laplace_limit<-concept_number;;
+concept_laplace_limit<-concept_irrational_number;;
+
+
+concept_laplace_limit <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(Предел Лапласа)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Предел Лапласа равен 0,662…. В простых случаях достаточно знать первые 4 знака (0,261). Но для более сложных случаев и там, где нужна большая точность необходимо знать больше, чем 4 цифры. Первые 35 знаков предела Лапласа после запятой 0,662 743 419 349 181 580 974 742 097 109 252 90...](* <- lang_ru;; 	*);;
+		*);;
+	*);;

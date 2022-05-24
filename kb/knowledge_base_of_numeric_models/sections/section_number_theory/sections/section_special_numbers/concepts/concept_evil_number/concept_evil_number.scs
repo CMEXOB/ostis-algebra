@@ -1,0 +1,47 @@
+sc_node_not_relation -> concept_evil_number;; 
+
+concept_evil_number => nrel_main_idtf:
+[злое число](*<-lang_ru;;*);
+[evil number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_evil_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (Злое число)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Злое число — целое неотрицательное число с чётным весом Хэмминга при записи в двоичной системе счисления (то есть с чётным числом единиц в двоичной записи).](* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_evil_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(Злое число; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Первые злые числа: 0, 3, 5, 6, 9, 10, 12, 15, 17, 18, 20, 23, 24, 27, 29, 30, 33, 34, 36, 39 …](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_evil_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(Злое число)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Числа, которые не являются злыми, называются одиозными числами, таким образом все натуральные числа делятся на одиозные и злые.](* <- lang_ru;; *);;
+		*);;
+	*);;

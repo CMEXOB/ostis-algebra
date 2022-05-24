@@ -1,0 +1,53 @@
+sc_node_not_relation->concept_prime_twin_constant;; 
+concept_prime_twin_constant=>nrel_main_idtf: [константа простых близнецов](*<-lang_ru;;*);	[prime_twin_constant](*<-lang_en;;*);;
+
+concept_prime_twin_constant=>nrel_idtf:	[0,660];		[C2](*<-lang_en;;*);;
+
+concept_prime_twin_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Константа простых близнецов)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа простых близнецов - математическая константа, используемая в нахождении пар простых чисел близнецов. Обозначается буквой «C2». C2=0,660161815...](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_prime_twin_constant <= nrel_using_constants:
+	{
+	concept_prime_twins_number
+	};;
+
+concept_prime_twin_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(иррациональное число, трансцендентное число)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа простых близнецов рациональнальное и трансцендентное число.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_prime_twin_constant<-concept_number;;
+concept_prime_twin_constant<-concept_irrational_number;;
+
+
+concept_prime_twin_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(Константа простых близнецов)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[C2=0,660…. В простых случаях достаточно знать первые 4 знака (0,660). Но для более сложных случаев и там, где нужна большая точность необходимо знать больше, чем 4 цифры. Первые 35 знаков C2 после запятой 0,660 161 815 846 869 573 927 812 110 014 555 77...](* <- lang_ru;; 	*);;
+		*);;
+	*);;

@@ -1,0 +1,67 @@
+sc_node_not_relation->concept_aperi_constant;; 
+concept_aperi_constant=>nrel_main_idtf: [постоянная Апери](*<-lang_ru;;*);	[Erdos-Borwein constant](*<-lang_en;;*);;
+
+concept_aperi_constant=>nrel_idtf:	[1,202];		[ζ(3)](*<-lang_en;;*);;
+
+concept_aperi_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Постоянная Апери)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Постоянная Апери - вещественное число, которое равно сумме обратных к кубам целых положительных чисел и, следовательно, является частным значением дзета-функции Римана. Обозначается буквой «ζ(3)». ζ(3)=1,202056903…](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_aperi_constant <= nrel_using_constants:
+	{
+	concept_real_number;
+	concept_riemann_zeta_functions
+	};;
+
+concept_aperi_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(непериодическая десятичная дробь)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Постоянная Апери непериодическая десятичная дробь.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_aperi_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(нахождение постоянной Апери)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://example.png";;
+		*);;
+	*);;
+
+
+concept_aperi_constant<-concept_number;;
+concept_aperi_constant<-concept_non_periodic_decimal;;
+
+
+concept_aperi_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(Постоянная Апери)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ζ(3)=1,202…. В простых случаях достаточно знать первые 4 знака (1,202). Но для более сложных случаев и там, где нужна большая точность необходимо знать больше, чем 4 цифры. Первые 35 знаков ζ(3) после запято 1,202 056 903 159 594 285 399 738 161 511 449 99...](* <- lang_ru;; 	*);;
+		*);;
+	*);;

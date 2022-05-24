@@ -1,0 +1,49 @@
+sc_node_not_relation->concept_pythagorean_constant;; 
+concept_pythagorean_constant=>nrel_main_idtf: [константа Пифагора](*<-lang_ru;;*);	[Pythagorean constant](*<-lang_en;;*);;
+
+concept_pythagorean_constant=>nrel_idtf:	[1,414]; [квадратный корень из 2](*<-lang_ru;;*);	[square root of 2](*<-lang_en;;*);;
+
+concept_pythagorean_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(константа Пифагора)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Пифагора — квадратный корень из 2, математическая константа, иррациональное число. Константа Пифагора=1,732050807…](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_pythagorean_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(иррациональное число)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Пифагора иррациональна.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_pythagorean_constant<-concept_number;;
+concept_pythagorean_constant<-concept_irrational_number;;
+
+
+
+concept_pythagorean_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(константа Пифагора)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Пифагора=1,414…. В простых случаях достаточно знать первые 4 знака (1,414). Но для более сложных случаев и там, где нужна большая точность необходимо знать больше, чем 4 цифры. Первые 35 знаков константы Пифагора после запятой 1,414 213 562 373 095 048 801 688 724 209 698 08...](* <- lang_ru;; 	*);;
+		*);;
+	*);;

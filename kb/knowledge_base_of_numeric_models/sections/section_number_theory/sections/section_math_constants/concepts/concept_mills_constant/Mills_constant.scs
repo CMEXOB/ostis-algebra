@@ -1,0 +1,52 @@
+sc_node_not_relation->concept_mills_constant;; 
+concept_mills_constant=>nrel_main_idtf: [константа Миллса](*<-lang_ru;;*);	[Mills constant](*<-lang_en;;*);;
+
+concept_mills_constant=>nrel_idtf:	[1,306];		[θ](*<-lang_en;;*);;
+
+concept_mills_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Константа Миллса)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Миллса - минимальное действительное число, целаяя часть которого при возведении в степень является простым числом. Обозначается буквой «θ». θ=1,306377883…](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_mills_constant <= nrel_using_constants:
+	{
+	concept_real_number
+	};;
+
+concept_mills_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(неизвестность рациональности числа)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Неизвестно, является ли константа Миллса рациональной или иррациональной.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_mills_constant<-concept_number;;
+
+
+concept_mills_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(Константа Миллса)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[θ=1,306…. В простых случаях достаточно знать первые 4 знака (1,306). Но для более сложных случаев и там, где нужна большая точность необходимо знать больше, чем 4 цифры. Первые 27 знаков θ после запято 1,306 377 883 863 080 690 468 614 492...](* <- lang_ru;; 	*);;
+		*);;
+	*);;

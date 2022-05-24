@@ -1,0 +1,49 @@
+sc_node_not_relation -> concept_sierpinski_number;; 
+
+concept_sierpinski_number => nrel_main_idtf:
+[число Серпинского](*<-lang_ru;;*);
+[bell number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_sierpinski_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (число Серпинского)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://sierpinski_number.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_sierpinski_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(число Серпинского; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Последовательность известных на данный момент чисел Серпинского начинается так: 78 557, 271 129, 271 577, 322 523, 327 739, 482 719, 575 041, 603 713, 903 983, 934 909, 965 431, 1 259 779, 1 290 677, 1 518 781, 1 624 097, 1 639 459, 1 777 613, 2 131 043, 2 131 099, 2 191 531, 2 510 177, 2 541 601, 2 576 089, 2 931 767, 2 931 991, 3 083 723, 3 098 059, 3 555 593, 3 608 251, …](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_sierpinski_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(число Серпинского)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://sierpinski_number2.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+
+

@@ -1,0 +1,50 @@
+sc_node_not_relation -> concept_fermat_number;; 
+
+concept_fermat_number => nrel_main_idtf:
+[число Ферма](*<-lang_ru;;*);
+[Fermat number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_fermat_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (число Ферма)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://fermat.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_fermat_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(число Ферма; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[При n∈ {0,1,2,3,4} числа Ферма простые и равны 3,5,17,257,65537.](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_fermat_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(число Ферма)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Пока других простых чисел Ферма не обнаружено, и неизвестно, существуют ли они при n > 4 или же все прочие числа Ферма — составные.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_fermat_number <= nrel_using_constants: concept_natural_number;;

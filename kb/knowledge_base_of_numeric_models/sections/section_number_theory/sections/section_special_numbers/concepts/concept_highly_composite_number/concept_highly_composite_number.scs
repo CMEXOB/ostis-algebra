@@ -1,0 +1,39 @@
+sc_node_not_relation -> concept_highly_composite_number;; 
+
+concept_highly_composite_number => nrel_main_idtf:
+[сверхсоставные числа](*<-lang_ru;;*);
+[highly composite number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_highly_composite_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (сверхсоставные числа)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Сверхсоставное число — натуральное число с бо́льшим числом делителей, чем любое меньшее натуральное число.](* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_highly_composite_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(сверхсоставные числа; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Первые сверсоставные числа: 1, 2, 4, 6, 12, 24, 36, 48, 60, 120, 180, 240, 360, 720, 840, 1260, 1680, 2520, 5040, 7560, 10080, 15120, 20160, 25200, 27720, 45360, 50400, 55440, 83160, 110880, 166320, 221760, 277200, 332640, 498960, 554400, 665280, 720720, 1081080, 1441440, 2162160](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_highly_composite_number -> rrel_example :
+		"file://high.png";;

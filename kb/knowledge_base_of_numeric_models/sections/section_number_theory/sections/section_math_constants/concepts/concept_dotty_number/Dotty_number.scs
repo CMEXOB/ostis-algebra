@@ -1,0 +1,67 @@
+sc_node_not_relation->concept_dotty_number;; 
+concept_dotty_number=>nrel_main_idtf: [число Дотти](*<-lang_ru;;*);	[Dotty number](*<-lang_en;;*);;
+
+concept_dotty_number=>nrel_idtf:	[0,739];;
+
+concept_dotty_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Число Дотти)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Число Дотти - математическая константа,определяемая как вещественное решение уравнения cos(x) = x. Не имеет общей буквы-обозначения. Число Дотти равно 0,739085133…](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_dotty_number <= nrel_using_constants:
+	{
+	nrel_cosine
+	};;
+
+concept_dotty_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(иррациональное число, трансцендентное число)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Число Дотти рациональнальное и трансцендентное число..](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_dotty_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(тригонометрические выражение с числом Дотти(D - число Дотти))] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://example.png";;
+		*);;
+	*);;
+
+
+concept_dotty_number<-concept_number;;
+concept_simple_twin_constant<-concept_irrational_number;;
+concept_simple_twin_constant<-concept_transcendental_number;;
+
+
+concept_dotty_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(Число Дотти)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Число Дотти равно 0,739…. В простых случаях достаточно знать первые 4 знака (0,739). Но для более сложных случаев и там, где нужна большая точность необходимо знать больше, чем 4 цифры. Первые 35 знаков числа Дотти после запятой 0,739 085 133 215 160 641 655 312 087 673 873 40...](* <- lang_ru;; 	*);;
+		*);;
+	*);;

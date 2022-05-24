@@ -7,9 +7,15 @@ section_subject_domain_of_special_numbers => nrel_main_idtf:
 
 section_subject_domain_of_special_numbers <- nrel_system_identifier;;
 
+section_subject_domain_of_special_numbers => nrel_section_decomposition: {
+    section_subject_domain_of_prime_numbers;
+    section_subject_domain_of_figurate_numbers
+};;
+
+
 section_subject_domain_of_special_numbers -> rrel_key_sc_element:
     subject_domain_of_special_numbers;
-    concept_factorial_prime_number;
+    
     concept_odd_perfect_number;
     concept_composite_number;
     concept_even_number;
@@ -18,16 +24,57 @@ section_subject_domain_of_special_numbers -> rrel_key_sc_element:
     concept_deficient_number;
     concept_perfect_number;
     concept_even_perfect_number;
-    concept_mersenne_prime;
+    
     concept_odd_number;
-    concept_prime_number;
+    
     concept_number_Prota;
-    concept_primorial_prime_number;
+    
     concept_almost_perfect_number;
-    concept_square_number;
+    
     concept_palindromic_number;
-    concept_semiprime_number;
+    
     concept_abundant_number;
+    concept_bell_number;
+    concept_woodall_number;
+    
+    
+    concept_smooth_number;
+    concept_sophie_germain_number;
+    concept_rough_number;
+    concept_evil_number;
+    concept_odious_number;
+    concept_cullen_number;
+    
+    concept_congruent_number;
+    
+    concept_nonhypotenuse_number;
+    concept_untouchable_number;
+    concept_nontotient_number;
+    concept_powerful_number;
+    concept_practical_number;
+    concept_highly_composite_number;
+    
+    concept_delannoy_number;
+    concept_Leyland_number;
+    concept_Riesel_number;
+    concept_Thabit_numbers;
+    concept_sierpinski_number;
+    concept_fibonacci_numbers;
+    
+    concept_Schroder_number;
+    concept_Carmichael_number;
+    concept_carol_number;
+    concept_ore_number;
+    concept_fermat_number;
+    concept_square_free_number;
+    concept_Zeisel_number;
+    concept_prime_twin_numbers;
+    nrel_prime_twin;
+    
+    
+    
+    
+    concept_Zuckerman_number;
     nrel_amicable_number;;
 
 section_subject_domain_of_special_numbers = [*
@@ -36,8 +83,12 @@ section_subject_domain_of_special_numbers = [*
         [Subject domain of special numbers] (* <- lang_en;; *);
     <- subject_domain;;
 
+    subject_domain_of_special_numbers => nrel_private_subject_domain:
+        subject_domain_of_prime_numbers;
+        subject_domain_of_figurate_numbers;;
+
     subject_domain_of_special_numbers -> rrel_not_maximum_studied_object_class:
-        concept_factorial_prime_number;
+        
         concept_odd_perfect_number;
         concept_composite_number;
         concept_even_number;
@@ -46,17 +97,58 @@ section_subject_domain_of_special_numbers = [*
         concept_deficient_number;
         concept_perfect_number;
         concept_even_perfect_number;
-        concept_mersenne_prime;
+        
         concept_odd_number;
-        concept_prime_number;
+        
         concept_number_Prota;
-        concept_primorial_prime_number;
+        
         concept_almost_perfect_number;
-        concept_square_number;
+        
         concept_palindromic_number;
-        concept_semiprime_number;
+        
+        concept_bell_number;
+        concept_woodall_number;
+        
+        
+        concept_smooth_number;
+        concept_rough_number;
+        concept_sophie_germain_number;
+        concept_evil_number;
+        concept_odious_number;
+        concept_cullen_number;
+        
+        concept_congruent_number;
+        
+        concept_nonhypotenuse_number;
+        concept_untouchable_number;
+        concept_nontotient_number;
+        concept_powerful_number;
+        concept_highly_composite_number;
+        concept_practical_number;
+        
+        concept_delannoy_number;
+        concept_Leyland_number;
+        concept_Riesel_number;
+        concept_Thabit_numbers;
+        concept_sierpinski_number;
+        concept_fibonacci_numbers;
+        
+        concept_Schroder_number;
+        concept_Carmichael_number;
+        concept_carol_number;
+        concept_ore_number;
+        concept_fermat_number;
+        concept_square_free_number;
+        concept_Zeisel_number;
+        concept_prime_twin_numbers;
+        
+        
+        
+        
+        concept_Zuckerman_number;
         concept_abundant_number;;
-
+        
     subject_domain_of_special_numbers -> rrel_explored_relation:
-        nrel_amicable_number;;
+        nrel_amicable_number;
+        nrel_prime_twin;;
 *];;

@@ -1,0 +1,49 @@
+sc_node_not_relation -> concept_Riesel_number;; 
+
+concept_Riesel_number => nrel_main_idtf:
+[число Ризеля](*<-lang_ru;;*);
+[Riesel number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_Riesel_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (Число Ризеля)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://Riesel_number1.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_Riesel_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(Число Ризеля; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Первые числа Ризеля: 509203, 762701, 777149, 790841, 992077, 1106681, 1247173, 1254341, 1330207, 1330319, 1715053, 1730653, 1730681, 1744117, 1830187, 1976473, 2136283, 2251349, 2313487, 2344211, 2554843, 2924861, ...](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_Riesel_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(Число Ризеля)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Проблема Ризеля состоит в определении наименьшего числа Ризеля. Так как ни для одного числа k < 509 203 не найдено покрывающее множество, то предполагается, что 509 203 является наименьшим числом Ризеля.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+

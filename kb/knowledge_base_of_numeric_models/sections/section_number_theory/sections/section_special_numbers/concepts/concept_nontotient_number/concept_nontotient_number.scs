@@ -1,0 +1,61 @@
+sc_node_not_relation -> concept_nontotient_number;; 
+
+concept_nontotient_number => nrel_main_idtf:
+[нетоитентное число](*<-lang_ru;;*);
+[nontotient number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_nontotient_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (нетоитентное число)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[В теории чисел под нетотиентным числом понимается положительное целое число n, не являющееся значением функции Эйлера, то есть не входящее в область значений функции Эйлера φ.](* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_nontotient_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(нетоитентное число; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Первые пятьдесят четных нетотиентых чисел: 14, 26, 34, 38, 50, 62, 68, 74, 76, 86, 90, 94, 98, 114, 118, 122, 124, 134, 142, 146, 152, 154, 158, 170, 174, 182, 186, 188, 194, 202, 206, 214, 218, 230, 234, 236, 242, 244, 246, 248, 254, 258, 266, 274, 278, 284, 286, 290, 298, 302](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_nontotient_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(нетоитентное число)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Таким образом, для нетотиентного числа уравнение φ(x) = n не имеет решений. Другими словами, n – нетотиентное число, если не существует целого числа x, имеющего ровно n взаимно простых чисел меньших его. ](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_nontotient_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(нетоитентное число; нечетное число] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Все нечетные числа нетотиенты за исключением 1, поскольку функция Эйлера принимает только чётные значения.](* <- lang_ru;; *);;
+		*);;
+	*);;
+

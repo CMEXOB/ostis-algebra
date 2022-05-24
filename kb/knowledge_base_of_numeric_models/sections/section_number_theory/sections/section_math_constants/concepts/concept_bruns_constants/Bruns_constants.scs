@@ -1,0 +1,54 @@
+sc_node_not_relation->concept_bruns_constants;; 
+concept_bruns_constants=>nrel_main_idtf: [константы Бруна](*<-lang_ru;;*);	[Bruns constants](*<-lang_en;;*);;
+
+concept_bruns_constants <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Константы Бруна)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константы Бруна — математические постоянные, характеризующие сумму обратных значений для чисел-близнецов.](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_bruns_constants <= nrel_using_constants:
+	{
+    concept_prime_twins_number;
+	nrel_reciprocal_values
+	};;
+
+concept_bruns_constants <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(сложность вычисления)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константы Бруна очень трудно вычислить с высокой точностью.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_bruns_constants<-concept_number;;
+
+concept_bruns_constants => nrel_inclusion: concept_bruns_constants_for_simple_twins;;
+concept_bruns_constants => nrel_inclusion: concept_bruns_constants_for_simple_fours;;
+
+
+concept_bruns_constants <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(постоянные Бруна)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[На данный момент известны константы Бруна для простых близнецов и простых четвёрок.](* <- lang_ru;; 	*);;
+		*);;
+	*);;

@@ -1,0 +1,49 @@
+sc_node_not_relation -> concept_balanced_prime_number;; 
+
+concept_balanced_prime_number => nrel_main_idtf:
+[сбалансированные простые числа](*<-lang_ru;;*);
+[balanced prime number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_balanced_prime_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (сбалансированные простые числа)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Сбалансированное простое — это простое число, для которого интервалы между простыми числами слева и справа от числа равны, так что число равно среднему арифметическому ближайших простых.](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_balanced_prime_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (сбалансированные простые числа)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://balanced.png";;
+		*);;
+	*);;
+	
+//утверждения
+concept_balanced_prime_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(сбалансированные простые числа; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Первые сбалансированные простые числа: 5, 53, 157, 173, 211, 257, 263, 373, 563, 593, 607, 653, 733, 947, 977, 1103](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_balanced_prime_number -> rrel_example :
+		[Например, 53 — шестнадцатое простое число. Пятнадцатое и семнадцатое числа —47 и 59, их сумма равна 106, а половина этой суммы равна 53, то есть 53 является сбалансированным простым.](* <- lang_ru;; *);;
+concept_balanced_prime_number <= nrel_using_constants: concept_prime_number;;

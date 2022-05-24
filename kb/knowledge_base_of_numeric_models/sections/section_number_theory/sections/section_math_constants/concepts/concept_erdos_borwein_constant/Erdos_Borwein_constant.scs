@@ -1,0 +1,66 @@
+sc_node_not_relation->concept_erdos_borwein_constant;; 
+concept_erdos_borwein_constant=>nrel_main_idtf: [константа Эрдёша-Борвейна](*<-lang_ru;;*);	[Erdos-Borwein constant](*<-lang_en;;*);;
+
+concept_erdos_borwein_constant=>nrel_idtf:	[1,606];		[E](*<-lang_en;;*);;
+
+concept_erdos_borwein_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Константа Эрдёша-Борвейна)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Эрдёша-Борвейна - математическая константа,  равная сумме обратных величин чисел Мерсенна. Обозначается буквой «E». E=1,606695152 …](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_erdos_borwein_constant <= nrel_using_constants:
+	{
+	concept_mersenne_prime
+	};;
+
+concept_erdos_borwein_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(иррациональное число)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Эрдёша-Борвейна иррациональной число.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_erdos_borwein_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(нахождение константы Эрдёша-Борвейна)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://example.png";;
+		*);;
+	*);;
+
+
+concept_erdos_borwein_constant<-concept_number;;
+concept_simple_twin_constant<-concept_irrational_number;;
+
+
+concept_erdos_borwein_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(Константа Эрдёша-Борвейна)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[E=1,606…. В простых случаях достаточно знать первые 4 знака (1,606). Но для более сложных случаев и там, где нужна большая точность необходимо знать больше, чем 4 цифры. Первые 1000 знаков E - 1,606 695 152 415 291 763 783 301 523 190 924 580 480 579 671 505 756 435 778 079 553 691 418 420 743 486 690 565 711 801 670 155 576...](* <- lang_ru;; 	*);;
+		*);;
+	*);;

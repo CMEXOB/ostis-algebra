@@ -1,0 +1,52 @@
+sc_node_role_relation -> rrel_antier;;
+rrel_antier => nrel_main_idtf:	[антье'](* <- lang_ru;; *);  [antier'](* <- lang_en;; *);;
+
+rrel_antier <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:[Опр.(антье')](*<- lang_ru;;*);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation:
+			...
+		(*
+	      -> rrel_example:
+			[Антье числа x - это целое число a, не превосходящее x.](*<-lang_ru;;*);;
+		*);;
+	*);;
+
+rrel_antier <- rrel_key_sc_element:
+ 	...
+	(*
+	=> nrel_main_idtf:[Пояснение.(антье')](*<- lang_ru;;*);;
+	<- sc_explanation;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Антье числа x - это целое число a, для которого справедливо равенство x - 1 < a <= x.](*<-lang_ru;;*);;
+		*);;
+	*);;
+
+rrel_antier <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf:[Утв.(число; антье')](*<-lang_ru;;*);;
+	<-sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Если антье числа равно самому числу, то это число - целое.](*<-lang_ru;;*);;
+		*);;
+	*);
+...
+	(*
+	=> nrel_main_idtf:[Утв.(число; антье')](*<-lang_ru;;*);;
+	<-sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		->rrel_example:
+			[Любое число может иметь только одно антье.](*<-lang_ru;;*);;
+		*);;
+	*);;

@@ -1,0 +1,74 @@
+sc_node_not_relation -> concept_Thabit_numbers;; 
+
+concept_Thabit_numbers => nrel_main_idtf:
+[число Сабита](*<-lang_ru;;*);
+[Thabit number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_Thabit_numbers <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (число Сабита)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://Thabit_numbers.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_Thabit_numbers <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(число Сабита; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Первые числа Сабита: 0, 2, 5, 11, 23, 47, 95, 191, 383, 767, 1535, 3071, 6143, 12287, 24575, 49151, 98303, 196607, 393215, 786431, 1572863, 3145727, 6291455,](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_Thabit_numbers <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(число Сабита)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Двоичное представление n-ого числа Сабита имеет длину n+2.](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_Thabit_numbers <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(число Сабита)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Некоторые числа Сабита являются простыми: 	2, 5, 11, 23, 47, 191, 383, 6143, 786431, 51539607551, 824633720831, 26388279066623, 108086391056891903, 55340232221128654847,...](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_Thabit_numbers <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(число Сабита)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Простые числа Сабита для n>164987 были найдены в ходе распределённых вычислений «321 search». Наибольшее из известных простых чисел Сабита 3*2^4235414-1 длиной в 1274988 знаков и было найдено Dylan Bennett в апреле 2008 года.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+

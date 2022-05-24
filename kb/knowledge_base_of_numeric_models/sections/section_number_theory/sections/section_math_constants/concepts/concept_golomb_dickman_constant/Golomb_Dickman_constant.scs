@@ -1,0 +1,65 @@
+sc_node_not_relation->concept_golomb_dickman_constant;; 
+concept_golomb_dickman_constant=>nrel_main_idtf: [постоянная Голомба-Дикмана](*<-lang_ru;;*);	[Golomb-Dickman constant](*<-lang_en;;*);;
+
+concept_golomb_dickman_constant=>nrel_idtf:	[0,624];		[λ](*<-lang_en;;*);;
+
+concept_golomb_dickman_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Постоянная Голомба-Дикмана)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Постоянная Голомба-Дикмана - математическая константа, возникающая в случайных перестановках и в теории чисел. Обозначается буквой «λ». λ=0,624329988…](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_golomb_dickman_constant <= nrel_using_constants:
+	{
+	concept_number_theory
+	};;
+
+concept_golomb_dickman_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(неизвестность рациональность числа)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Неизвестно, является ли постоянная Голомба-Дикмана рациональной или иррациональной.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_golomb_dickman_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(интегральное представление постоянной Голомба-Дикмана(p(t) - функция Дикмана))] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://example.png";;
+		*);;
+	*);;
+
+
+concept_golomb_dickman_constant<-concept_number;;
+
+
+concept_golomb_dickman_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(Постоянная Голомба-Дикмана)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[λ=0,624…. В простых случаях достаточно знать первые 4 знака (0,624). Но для более сложных случаев и там, где нужна большая точность необходимо знать больше, чем 4 цифры. Первые 35 знаков λ после запятой 0,624 329 988 543 550 870 992 936 383 100 837 24...](* <- lang_ru;; 	*);;
+		*);;
+	*);;

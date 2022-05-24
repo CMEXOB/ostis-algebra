@@ -1,0 +1,54 @@
+sc_node_not_relation->concept_caens_constant;; 
+concept_caens_constant=>nrel_main_idtf: [константа Каэна](*<-lang_ru;;*);	[Caes constant](*<-lang_en;;*);;
+
+concept_caens_constant=>nrel_idtf:	[0,643];		[C](*<-lang_en;;*);;
+
+concept_caens_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Константа Каэна)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Каэна - сумма знакочередующегося числового ряда, строящегося из членов ряда Сильвестра. Обозначается буквой «C». C=0,64341054629](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_caens_constant <= nrel_using_constants:
+	{
+	concept_numerical_series;
+	concept_sylvester_series
+	};;
+
+concept_caens_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(иррациональное число, трансцендентное число)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Каэна рациональнальное и трансцендентное число.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_caens_constant<-concept_number;;
+concept_caens_constant<-concept_irrational_number;;
+
+
+concept_caens_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(Константа Каэна)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Каэна имеет фиксированное значение: C=0,643 410 546 29.](* <- lang_ru;; 	*);;
+		*);;
+	*);;

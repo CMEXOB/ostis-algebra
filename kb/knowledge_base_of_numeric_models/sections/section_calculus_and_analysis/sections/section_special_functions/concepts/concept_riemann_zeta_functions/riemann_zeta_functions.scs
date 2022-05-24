@@ -1,0 +1,49 @@
+sc_node_not_relation -> concept_riemann_zeta_functions;;
+
+concept_riemann_zeta_functions=>nrel_main_idtf:
+[riemann zeta functions](*<-lang_en;;*);
+[дзета-функция Римана](*<-lang_ru;;*);;
+
+//определения и пояснения
+concept_riemann_zeta_functions<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(нечетная функция)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(* 
+->rrel_example:
+      [Дзета-функция Римана — функция комплексной переменной определяемая с помощью ряда Дирихле.](*<-lang_ru;;*);;
+*);;
+*);;
+
+
+concept_analytic_function=>nrel_inclusion : concept_riemann_zeta_functions;;
+
+//утверждения
+concept_riemann_zeta_functions<-rrel_key_sc_element:
+...
+(*
+=>nrel_main_idtf:[Утв.(нахождение дзета-функции Римана)](*<-lang_ru;;*);;
+<-sc_statement;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+     "file://example.png"(*<-lang_ru;;*);;
+*);;
+*);
+...
+(*
+=>nrel_main_idtf:[Утв.(аналитическая функция)](*<-lang_ru;;*);;
+<-sc_statement;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+     [Дзета-функции Римана - аналитическая.](*<-lang_ru;;*);;
+*);;
+*);;
+
+concept_riemann_zeta_functions -> rrel_example:	"file://zeta.png";;

@@ -1,0 +1,66 @@
+sc_node_not_relation -> concept_fibonacci_numbers;; 
+
+concept_fibonacci_numbers => nrel_main_idtf:
+[числа Фибоначчи](*<-lang_ru;;*);
+[fibonacci number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_fibonacci_numbers <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (числа Фибоначчи)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Чи́сла Фибона́ччи — элементы числовой последовательности в которой первые два числа равны 0 и 1, а каждое последующее число равно сумме двух предыдущих чисел](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_fibonacci_numbers <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (числа Фибоначчи)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://fibonacci_numbers.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_fibonacci_numbers <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(числа Фибоначчи; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Начало послеовательности: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, … ](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_fibonacci_numbers <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(числа Фибоначчи)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://fib.png";;
+		*);;
+	*);;
+
+		
+concept_fibonacci_numbers -> rrel_example :
+		"file://fib2.png";;
+
+concept_fibonacci_numbers <= nrel_using_constants:concept_sequence;concept_integer_number;;

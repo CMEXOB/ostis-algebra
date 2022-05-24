@@ -1,0 +1,66 @@
+sc_node_not_relation->concept_catalana_constant;; 
+concept_catalana_constant=>nrel_main_idtf: [постоянная Каталана](*<-lang_ru;;*);	[Catalana constant](*<-lang_en;;*);;
+
+concept_catalana_constant=>nrel_idtf:	[0,915];		[G](*<-lang_en;;*);;
+
+
+concept_catalana_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Постоянная Каталана)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Постоянная Каталана - число, часто встречающееся в комбинаторике. Обозначается буквой «G». G=0,915965594…](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_first_feigenbaum_constant <= nrel_using_constants:
+	{
+    concept_combinatorics
+	};;
+
+concept_catalana_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(неизвестность рациональности числа)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Неизвестно, является ли постоянная Каталана рациональной или иррациональной.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_catalana_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(Постоянная Каталана равна сумме бесконечного знакочередующегося ряда)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://example.png";;
+		*);;
+	*);;
+
+
+concept_catalana_constant<-concept_number;;
+
+
+concept_catalana_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(Постоянная Каталана)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[G=0,915…. В простых случаях достаточно знать первые 4 знака (0,915). Но для более сложных случаев и там, где нужна большая точность необходимо знать больше, чем 4 цифры. Первые 35 знаков G после запятой 0,915 965 594 177 219 015 054 603 514 932 384 11...](* <- lang_ru;; 	*);;
+		*);;
+	*);;

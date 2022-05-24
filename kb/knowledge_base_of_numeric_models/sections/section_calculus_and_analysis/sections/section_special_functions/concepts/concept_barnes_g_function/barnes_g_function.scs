@@ -1,0 +1,40 @@
+sc_node_not_relation -> concept_barnes_g_function;;
+
+concept_barnes_g_function=>nrel_main_idtf:
+[barnes g function](*<-lang_en;;*);
+[g-функция Барнса](*<-lang_ru;;*);;
+
+//определения и пояснения
+concept_barnes_g_function<-rrel_key_sc_element:
+...
+(*
+   =>nrel_main_idtf:[Опр.(g-функция Барнса)](*<-lang_ru;;*);;
+   <-sc_definition;;
+   <=nrel_sc_text_translation:
+...
+(* 
+->rrel_example:
+      [G-функция Барнса — функция, являющаяся обобщением суперфакториала для комплексных чисел.](*<-lang_ru;;*);;
+*);;
+*);;
+
+
+concept_analytic_function=>nrel_inclusion : concept_barnes_g_function;;
+concept_barnes_g_function <= nrel_using_constants: nrel_syperfactorial;concept_complex_number;;
+
+
+//утверждения
+concept_barnes_g_function<-rrel_key_sc_element:
+...
+(*
+=>nrel_main_idtf:[Утв.(нахождение G-функция Барнса(sf - суперфакториал))](*<-lang_ru;;*);;
+<-sc_statement;;
+<=nrel_sc_text_translation:
+...
+(*
+->rrel_example:
+     "file://example.png"(*<-lang_ru;;*);;
+*);;
+*);;
+
+concept_barnes_g_function -> rrel_example:	"file://g_fun.png";;

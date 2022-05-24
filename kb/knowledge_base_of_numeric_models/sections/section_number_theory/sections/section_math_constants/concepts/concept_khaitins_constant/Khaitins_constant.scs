@@ -1,0 +1,55 @@
+sc_node_not_relation->concept_khaitins_constant;; 
+concept_khaitins_constant=>nrel_main_idtf: [константа Хайтина](*<-lang_ru;;*);	[Khaitin's constant](*<-lang_en;;*);;
+
+concept_khaitins_constant=>nrel_idtf:	[0,007];		[Ω](*<-lang_en;;*);;
+
+concept_khaitins_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Константа Хайтина)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Хайтина - математическая константа,используемая для решения многих выдающихся проблем теории чисел, включая проблему Гольдбаха и гипотезу Римана. Обозначается буквой «Ω». Ω=0,007874996 …](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_khaitins_constant <= nrel_using_constants:
+	{
+	concept_number_theory;
+	concept_goldbach_problem;
+	concept_riemann_hypothesis
+	};;
+
+concept_khaitins_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(невычислимое число)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Хайтина невычислимое число.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_khaitins_constant<-concept_number;;
+concept_simple_twin_constant<-non_calculated_number;;
+
+
+concept_khaitins_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(Константа Хайтина)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Хайтина используется не только в теории чисел, но и в алгоритмической теории информации, где она принимает разные значения в зависимости от различный языков программирования. В теории чисел Ω считают равной 0,007 874 996 997 812 384 4.](* <- lang_ru;; 	*);;
+		*);;
+	*);;

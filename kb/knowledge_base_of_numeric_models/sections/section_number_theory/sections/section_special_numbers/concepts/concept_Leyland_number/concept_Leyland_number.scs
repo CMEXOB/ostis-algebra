@@ -1,0 +1,49 @@
+sc_node_not_relation -> concept_Leyland_number;; 
+
+concept_Leyland_number => nrel_main_idtf:
+[число Лейланда](*<-lang_ru;;*);
+[Leyland number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_Leyland_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (число Лейланда)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://leyland_number.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_Leyland_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(число Лейланда; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Первые несколько чисел Лейланда: 3, 8, 17, 32, 54, 57, 100, 145, 177, 320, 368, 512, 593, 945, 1124, 1649, 2169, 2530, 4240, 5392, …](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_Leyland_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(число Лейланда)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Числа Лейланда оказались удачными тестовыми примерами для универсальных алгоритмов разложения на множители из-за своего простого алгебраического описания и отсутствия очевидных свойств, которые бы позволили применить какой-либо специальный алгоритм факторизации](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+

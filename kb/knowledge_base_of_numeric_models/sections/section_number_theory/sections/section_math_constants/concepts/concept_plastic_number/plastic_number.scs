@@ -1,0 +1,68 @@
+sc_node_not_relation->concept_plastic_number;; 
+concept_plastic_number=>nrel_main_idtf: [пластическое число](*<-lang_ru;;*);	[plastic number](*<-lang_en;;*);;
+
+concept_plastic_number=>nrel_idtf:	[1,324];		[ρ](*<-lang_en;;*);;
+
+concept_plastic_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Пластическое число)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Пластическое число - это единственный действительный корень уравнения x^3 = x+1. Обозначается буквой «ρ». ρ=1,324717957…](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_plastic_number <= nrel_using_constants:
+	{
+	concept_real_number;
+	concept_equation
+	};;
+
+concept_plastic_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(иррациональнальная число, алгебраическое число)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Пластическое число иррациональнальное и алгебраическое число.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_plastic_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(представление пластического числа в виде бесконечно вложенных радикалов)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://example.png";;
+		*);;
+	*);;
+
+
+concept_plastic_number<-concept_number;;
+concept_plastic_number<-concept_algebraic_number;;
+concept_plastic_number<-concept_irrational_number;;
+
+
+concept_plastic_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(Пластическое число)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[ρ=1,324…. В простых случаях достаточно знать первые 4 знака (1,324). Но для более сложных случаев и там, где нужна большая точность необходимо знать больше, чем 4 цифры. Первые 30 знаков ρ после запято 1,324 717 957 244 746 025 960 908 854 478...](* <- lang_ru;; 	*);;
+		*);;
+	*);;

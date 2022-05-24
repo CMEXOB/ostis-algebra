@@ -1,0 +1,52 @@
+sc_node_not_relation -> concept_Zuckerman_number;; 
+
+concept_Zuckerman_number => nrel_main_idtf:
+[числа Цукермана](*<-lang_ru;;*);
+[Pythagorean prime number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_Zuckerman_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (числа Цукермана)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Числа Цукермана — такие натуральные числа, которые делятся на произведение своих цифр.](* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_Zuckerman_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(числа Цукермана; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Все целые числа от 1 до 9 являются числами Цукермана. Все числа, включающие ноль, не являются числами Цукермана. Первые несколько чисел Цукермана, состоящие более чем из одной цифры, — 11, 12, 15, 24, 36, 111, 112, 115, 128, 132, 135, 144, 175, 212, 216, 224, 312, 315, 384, ...](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_Zuckerman_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(числа Цукермана)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Числа Цукермана не могут содержать более чем восемь различных цифр (так как такое число не может одновременно содержать 5 и чётные цифры). Наименьшее число Цукермана, содержащие восемь различных цифр, — это 1196342784.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_Zuckerman_number -> rrel_example :
+		[212 — число Цукермана, так как 2*1*2 = 4 и 212 делится на 4](* <- lang_ru;; *);;
+
+concept_Zuckerman_number <= nrel_using_constants: concept_natural_number;;

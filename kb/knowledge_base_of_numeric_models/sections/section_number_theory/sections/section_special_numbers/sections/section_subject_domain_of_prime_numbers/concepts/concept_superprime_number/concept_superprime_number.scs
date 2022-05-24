@@ -1,0 +1,48 @@
+sc_node_not_relation -> concept_superprime_number;; 
+
+concept_superprime_number => nrel_main_idtf:
+[суперпростые числа](*<-lang_ru;;*);
+[superprime number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_superprime_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (суперпростые числа)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Суперпростые числа (также известны как простые числа высшего порядка) — это подмножество простых чисел, стоящих в списке простых чисел на позициях, являющихся простыми числами.](* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_superprime_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(суперпростые числа; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Первые члены последовательности суперпростых чисел: 3, 5, 11, 17, 31, 41, 59, 67, 83, 109, 127, 157, … ](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_superprime_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(суперпростые числа)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Доказано, что любое целое число большее 96 может быть представлено в виде суммы суперпростых чисел.](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_superprime_number <= nrel_using_constants:concept_prime_number;;

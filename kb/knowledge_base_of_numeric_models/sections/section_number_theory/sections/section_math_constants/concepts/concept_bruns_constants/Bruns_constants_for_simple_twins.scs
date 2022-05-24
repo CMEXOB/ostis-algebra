@@ -1,0 +1,51 @@
+sc_node_not_relation->concept_bruns_constants_for_simple_twins;; 
+concept_bruns_constants_for_simple_twins=>nrel_main_idtf: [константа Бруна для простых близнецов](*<-lang_ru;;*);	[Bruns constant for simple twins](*<-lang_en;;*);;
+
+concept_bruns_constants_for_simple_twins <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Константа Бруна для простых близнецов)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Бруна для простых близнецов — математическая постоянная, характеризующие сумму обратных значений для двух чисел-близнецов.](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_bruns_constants_for_simple_twins <= nrel_using_constants:
+	{
+    concept_prime_twins_number;
+	nrel_reciprocal_values
+	};;
+
+concept_bruns_constants_for_simple_twins <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(сложность вычисления)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константу Бруна для простых близнецов очень трудно вычислить с высокой точностью.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_bruns_constants_for_simple_twins<-concept_number;;
+
+
+concept_bruns_constants_for_simple_twins <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(константа Бруна для простых близнецов)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Диапозон вычисления константы Бруна для простых близнецов больше 1,83 и меньше 2,1754. Но принято считать её за 1,902 160 583 104](* <- lang_ru;; 	*);;
+		*);;
+	*);;

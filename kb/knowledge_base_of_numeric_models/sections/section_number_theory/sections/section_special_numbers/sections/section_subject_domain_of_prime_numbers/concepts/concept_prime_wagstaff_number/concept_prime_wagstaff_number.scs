@@ -1,0 +1,47 @@
+sc_node_not_relation -> concept_prime_wagstaff_number;; 
+
+concept_prime_wagstaff_number => nrel_main_idtf:
+[простое число Bагстафа](*<-lang_ru;;*);
+[wagstaff number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_prime_wagstaff_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (простое число Bагстафа)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://prime_wagstaff_number_statement1.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_prime_wagstaff_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(простое число Bагстафа)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://prime_wagstaff_number_statement2.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_prime_wagstaff_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(простое число Bагстафа)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Первые несколько чисел Вагстафа: 3, 11, 43, 683, 2731, 43691, 174763, 2796203, 715827883, 2932031007403, ...](* <- lang_ru;; *);;
+		*);;
+	*);;

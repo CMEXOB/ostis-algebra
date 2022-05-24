@@ -1,0 +1,53 @@
+sc_node_not_relation->concept_sylvester_series;; 
+
+concept_sylvester_series=>nrel_main_idtf:
+[ряд Сильвестра](*<-lang_ru;;*);
+[sylvester series](*<-lang_en;;*);;
+
+// синонимы
+concept_sylvester_series=> nrel_idtf:[Последовательность Сильвестра](*<-lang_ru;;*);;
+
+//определение
+concept_sylvester_series <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(ряд Сильвестра)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Ряд Сильвестра – ряд, в котором каждый очередной член равен произведению предыдущих членов плюс 1.](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+// утверждения
+concept_sylvester_series <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(первый элемент ряда Сильвестра)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Первый элемент ряда Сильвестра - 2.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+//используемые константы
+concept_sylvester_series <= nrel_using_constants: concept_series;;
+
+
+//пример
+concept_sylvester_series -> rrel_example :
+...
+	(* 
+<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[2, 3, 7, 43, 1807, 3 263 443, 10 650 056 950 807, ...](* <- lang_ru;; 	*);;
+		*);;
+	*);;

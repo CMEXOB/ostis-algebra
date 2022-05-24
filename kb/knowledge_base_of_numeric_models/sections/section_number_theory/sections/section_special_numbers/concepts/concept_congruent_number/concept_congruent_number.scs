@@ -1,0 +1,43 @@
+sc_node_not_relation -> concept_congruent_number;; 
+
+concept_congruent_number => nrel_main_idtf:
+[конгруэнтное число](*<-lang_ru;;*);
+[congruent number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_congruent_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (конгруэнтное число)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[Конгруэ́нтное число — натуральное число, равное площади прямоугольного треугольника со сторонами, длины которых выражаются рациональными числами.](* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_congruent_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(конгруэнтное число; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Конгруэнтные числа образуют последовательность 5, 6, 7, 13, 14, 15, 20, 21, 22, 23, 24, 28, 29, 30, 31, 34, 37, 38, 39, 41, 45, 46, 47, 52…](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_congruent_number -> rrel_example :
+		[Например, 5 является конгруэнтным числом, поскольку оно является площадью треугольника со сторонами 20/3, 3/2 и 41/6.](* <- lang_ru;; *);;
+concept_congruent_number -> rrel_example :
+		[Таким же образом, число 6 является конгруэнтным, поскольку оно является площадью треугольника со сторонами 3,4 и 5.](* <- lang_ru;; *);;
+concept_congruent_number -> rrel_example :
+		"file://triangle.png";;
+

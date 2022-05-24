@@ -1,0 +1,52 @@
+sc_node_not_relation -> concept_square_free_number;; 
+
+concept_square_free_number => nrel_main_idtf:
+[бесквадратное число](*<-lang_ru;;*);
+[square-feee number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_square_free_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (бесквадратное число)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			[В математике свободным от квадратов, или бесквадратным, называется число, которое не делится ни на один квадрат, кроме 1.](* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_square_free_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(бесквадратное число; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Начало последовательности свободных от квадратов чисел таково: 1, 2, 3, 5, 6, 7, 10, 11, 13, 14, 15, 17, 19, 21, 22, 23, 26, 29, 30, 31, 33, 34, 35, 37, 38, 39, …](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_square_free_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(бесквадратное число)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Положительное число n свободно от квадратов тогда и только тогда, когда в разложении этого числа на простые множители ни одно простое число не встречается больше одного раза. ](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_square_free_number -> rrel_example :
+		[К примеру, 10 — свободное от квадратов, а 18 — нет, так как 18 делится на 9 = 3^2. ](* <- lang_ru;; *);;
+
+concept_square_free_number <= nrel_using_constants: concept_natural_number;;

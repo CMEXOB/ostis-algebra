@@ -1,0 +1,68 @@
+sc_node_not_relation->concept_landau_ramanujan_constant;; 
+concept_landau_ramanujan_constant=>nrel_main_idtf: [константа Ландау-Рамануджана](*<-lang_ru;;*);	[Landau-Ramanujan constant](*<-lang_en;;*);;
+
+concept_landau_ramanujan_constant=>nrel_idtf:	[0,764];;
+
+concept_landau_ramanujan_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Константа Ландау-Рамануджана)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Ландау-Рамануджана - результат теории чисел о плотности сумм двух квадратов целых чисел на числовой оси. Не имеет единой буквы-обозначения. Константа Ландау-Рамануджана равна 0,764223653…](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_landau_ramanujan_constant <= nrel_using_constants:
+	{
+	nrel_limit;
+    nrel_logarithm;
+	concept_number_theory
+	};;
+
+concept_landau_ramanujan_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(иррациональное число)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Ландау-Рамануджана иррациональнальная число.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_landau_ramanujan_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(нахождение константы Ландау-Рамануджана(C - константа, N(x) - число целых на отрезке от 1 до x включительно))] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://example.png";;
+		*);;
+	*);;
+
+
+concept_landau_ramanujan_constant<-concept_number;;
+concept_landau_ramanujan_constant<-concept_irrational_number;;
+
+
+concept_landau_ramanujan_constant <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(Константа Ландау-Рамануджана)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Ландау-Рамануджана равна 0,764…. В простых случаях достаточно знать первые 4 знака (0,764). Но для более сложных случаев и там, где нужна большая точность необходимо знать больше, чем 4 цифры. Первые 29 знаков γ после запятой 0,764 223 653 589 220 662 990 698 731 25...](* <- lang_ru;; 	*);;
+		*);;
+	*);;

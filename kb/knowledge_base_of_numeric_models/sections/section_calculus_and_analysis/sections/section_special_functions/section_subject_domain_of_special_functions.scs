@@ -41,6 +41,9 @@ section_subject_domain_of_special_functions -> rrel_key_sc_element:
     concept_elliptic_function;
     concept_discontinuous_function;
     concept_homogeneous_function;
+    concept_riemann_zeta_functions;
+    concept_k_function;
+    concept_barnes_g_function;
     nrel_linearly_dependent_function;
     nrel_inverse_function;
     nrel_module;
@@ -83,7 +86,10 @@ section_subject_domain_of_special_functions = [*
         concept_arithmetic_function;
         concept_elliptic_function;
         concept_discontinuous_function;
-        concept_homogeneous_function;;
+        concept_homogeneous_function;
+        concept_riemann_zeta_functions;
+        concept_k_function;
+        concept_barnes_g_function;;
 
     subject_domain_of_special_functions -> rrel_explored_relation:
         nrel_linearly_dependent_function;

@@ -1,0 +1,34 @@
+sc_node_not_relation -> concept_prime_wilson_number;; 
+
+concept_prime_wilson_number => nrel_main_idtf:
+[простое число Вильсона](*<-lang_ru;;*);
+[prime Wilson number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_prime_wilson_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (простое число Вильсона)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://prime_wilson_number_statement.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+concept_prime_wilson_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(простое число Вильсона)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Известны только три простых числа Вильсона — это 5, 13 и 563. Если существуют другие, они должны быть больше 2⋅10^13](* <- lang_ru;; *);;
+		*);;
+	*);;

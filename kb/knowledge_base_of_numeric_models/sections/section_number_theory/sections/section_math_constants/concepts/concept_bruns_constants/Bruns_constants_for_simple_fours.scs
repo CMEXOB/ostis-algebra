@@ -1,0 +1,51 @@
+sc_node_not_relation->concept_bruns_constants_for_simple_fours;; 
+concept_bruns_constants_for_simple_fours=>nrel_main_idtf: [константа Бруна для простых четвёрок](*<-lang_ru;;*);	[Bruns constant for simple fours](*<-lang_en;;*);;
+
+concept_bruns_constants_for_simple_fours <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Опр.(Константа Бруна для простых четвёрок)]  (* <- lang_ru;; *);;
+	<- sc_defenition;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константа Бруна для простых четвёрок — математическая постоянная, характеризующие сумму обратных значений для 4 чисел-близнецов.](* <- lang_ru;; 	*);;
+		*);;
+	*);;
+
+concept_bruns_constants_for_simple_fours <= nrel_using_constants:
+	{
+    concept_prime_twins_number;
+	nrel_reciprocal_values
+	};;
+
+concept_bruns_constants_for_simple_fours <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(сложность вычисления)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Константу Бруна для простых четвёрок очень трудно вычислить с высокой точностью.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+concept_bruns_constants_for_simple_fours<-concept_number;;
+
+
+concept_bruns_constants_for_simple_fours <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Пояснение(константа Бруна для простых четвёрок)]  (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Принято считать константу Бруна для простых четвёрок за 0,870 588 380 0](* <- lang_ru;; 	*);;
+		*);;
+	*);;

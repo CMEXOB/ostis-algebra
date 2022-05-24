@@ -1,0 +1,49 @@
+sc_node_not_relation -> concept_bell_number;; 
+
+concept_bell_number => nrel_main_idtf:
+[число Белла](*<-lang_ru;;*);
+[bell number](*<-lang_en;;*);;
+
+
+//определения и пояснения
+concept_bell_number <- rrel_key_sc_element:
+	...
+	(*
+	=> nrel_main_idtf: [Опр. (Число Белла)] (*<-lang_ru;;*);;
+	<-sc_definition;;
+	<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://bell_number_statement.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+	
+	
+//утверждения
+concept_bell_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(Число Белла; последовательность* )] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			"file://bell_number_statement2.html"(* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_bell_number <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(Число Белла)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Ряд чисел Белла обозначает число способов, с помощью которых можно распределить n пронумерованных шаров по n идентичным коробкам. Кроме этого, числа Белла дают возможность узнать сколько существует способов разложить на множители составное число, состоящее из n простых множителей.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
